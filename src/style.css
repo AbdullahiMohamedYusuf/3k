@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@300&display=swap");
+:root {
+  --ButtonBackground: #7c78b8;
+  --ButtonFontColor: #fff;
+  --Shadows: #d4d3e8;
+  --Background: #5d54a4;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+nav {
+  color: #fff;
+  align-items: center;
+  display: flex;
+  height: 100px;
+  isolation: isolate;
+  align-items: center;
+}
+.time {
+  font-size: 100px;
+}
+.MainHeader {
+  position:relative;
+  background-color: #000;
+  z-index: 0;
+  height: 1000px;
+}
+.MainHeader::before {
+  background-attachment: fixed;
+
+  content: "";
+  background: #000 url("./images/pexels-photo-7129737.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  opacity: 0.4;
+  inset: 0;
+}
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  max-width: 90%;
+  margin: auto;
+}
+
+nav a {
+  color: #fff;
+  font-weight: bold;
+}
+.menu,
+ul {
+  display: flex;
+}
+ul {
+  display: flex;
+  gap: 20px;
+  font-size: 15px;
+}
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+.buttons button {
+  border: none;
+  background: var(--ButtonBackground);
+  color: #fff;
+  width: 140px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+#btn {
+  background-color: var(--ButtonBackground);
+  border: none;
+  padding: 10px;
+  width: 120px;
+  font-weight: bold;
+  cursor: pointer;
+  color: crimson;
+  box-shadow: 5px 2px 30px var(--Shadows);
+  margin-top: 30px;
+  color: #fff;
+  width: 200px;
+  padding: 7px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.buttons button:active,
+#btnB:active {
+  background-color: var(--Background);
+}
+header {
+  height: 700px;
+  color: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  isolation: isolate;
+}
+header a {
+  color: var(--Shadows);
+}
+header h1 {
+  font-size: 50px;
+}
+header p {
+  font-size: 20px;
+  color: aliceblue;
+}
+.maxW {
+  max-width: 100px;
+  margin: auto;
+  justify-content: space-between;
+}
+
+#btnB {
+  width: 200px;
+  border: 2px solid rgb(235, 161, 3);
+  color: rgb(235, 161, 3);
+}
+
+.iso {
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.container2 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  max-width: 90%;
+  margin: auto;
+  align-items: center;
+}
+
+.iso h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.welcome {
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
+  font-size: 100px;
+}
+
+.iso h4 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
+}
+.halal {
+  font-family: "Dancing Script", cursive;
+  font-size: 60px;
+}
+.bubble {
+  font-size: 60px;
+}
+
+#btn:active {
+  background: #fff;
+  color: #000;
+}
+.about {
+  max-width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 10%;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+  align-items: center;
+  margin-top: 70px;
+}
+.about h3 {
+  color: grey;
+  font-size: 20px;
+}
+.about h2 {
+  font-size: 40px;
+}
+.about span {
+  color: crimson;
+}
+.imageP {
+  border-radius: 10px;
+  background-color: var(--Background);
+}
+.imageP img {
+  position: relative;
+  left: 100px;
+  top: 35px;
+  height: 400px;
+  box-shadow: 20px 2px 40px var(--ButtonBackground);
+  border-radius: 10px;
+}
+.discription p {
+  font-size: 20px;
+  line-height: 1.8;
+}
+.discription button {
+  background-color: var(--Background);
+  border: none;
+  padding: 10px;
+  width: 120px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 5px 2px 30px var(--ButtonBackground);
+  margin-top: 30px;
+}
+
+.discription button:active {
+  box-shadow: 1px 2px 20px rgb(85, 1, 1);
+  background-color: rgb(105, 5, 25);
+}
+.famous {
+  margin-top: 7%;
+}
+.display {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 85%;
+  margin: auto;
+}
+.display h2 {
+  color: crimson;
+}
+
+.adjust {
+  width: 500px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0%;
+  align-items: center;
+  max-height: 700px;
+}
+.line {
+  width: 100px;
+  height: 3px;
+  background: crimson;
+  border-radius: 10px;
+}
+.title {
+  width: 300px;
+  max-width: 90%;
+  margin: auto;
+  margin-bottom: 2%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.title h1 {
+  font-size: 40px;
+}
+.famous {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+#btnSpec {
+  background-color: crimson;
+  border: none;
+  padding: 10px;
+  width: 220px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 5px 2px 30px red;
+  margin-top: 30px;
+}
+.stick {
+  position: relative;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+.content_2 {
+  position: sticky;
+  top: 0;
+}
+.fai{
+  transition: 0.5s;
+}
+.fai:hover {
+  translate: 15%;
+}
+.stick a {
+  font-size: 30px;
+}
+#facebook {
+  color: #4267b2;
+}
+#twitter {
+  color: #333;
+}
+#linkedin {
+  color: #0077b5;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(39, 1, 1);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: crimson;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.prayer {
+  display: flex;
+  max-width:80%;
+  margin:auto;
+  align-items: center; z-index: 1;
+}
+.remember {
+  width: 50%;
+  flex-grow: 1;
+}
+.remember p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-top: 2%;
+}
+.contain2 {
+  width: 50%;
+}
+.remember span {
+  color: #7c78b8;
+}

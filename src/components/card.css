@@ -1,0 +1,83 @@
+.cards-container {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content_card {
+  width: 80%;
+  margin:auto;
+ 
+}
+.Card {
+  position: relative;
+  width: calc(400px - 30px);
+  height: calc(300px - 30px);
+  background-color: transparent;
+    border: 3px solid #7c78b8;
+  float: left;
+  margin: 15px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 20px;
+  color: #7c78b8;
+}
+.Card .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #7c78b8;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.Card:hover .icon {
+  top: 20px;
+  right: calc(50% - 40px);
+  left: 10px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Card .icon .fa {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 80px;
+  transition: 0.5s;
+  color: #fff;
+}
+a {
+  cursor: pointer;
+}
+
+.Card:hover .icon .fa {
+  font-size: 40px;
+  position: relative;
+  text-align: center;
+  top: 0%;
+  left: 25%;
+}
+
+.Card .discription {
+  position: absolute;
+  top: 100px;
+  height: calc(100% - 100px);
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  align-items: center;
+}
+
+.Card p {
+    font-size: 14px;
+}

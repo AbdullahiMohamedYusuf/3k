@@ -1,0 +1,73 @@
+/* Add custom styles for the prayer times table */
+.center-table {
+    max-width: 80%;
+    margin: auto;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+  }
+  .boxBehind {
+    border: 10px solid #5A4FCF;
+    padding: 0px;
+    border-radius: 10px;
+  }
+  .center-table button {
+    padding: 6px;
+    width: 120px;
+    height: 30px;
+    border-radius: 7px;
+    border: none;
+    background-color:#5A4FCF;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20%;
+  }
+  .button {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: end;
+  }
+  .center-table h1{
+    color: #9E97E3;
+  }
+  
+  table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    max-width: 1000px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: -10px 20px 30px #7C73D9;
+    margin-bottom: 20px;
+    position: relative;
+    right: 5%;
+    top: 30px;
+  }
+  
+  th, td {
+    text-align: center;
+    padding: 12px;
+  }
+  
+  th {
+    background-color: #9E97E3;
+    font-weight: bold;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tr:hover {
+    background-color: #BFBBED;
+  }
+  current-day {
+    background-color: #5A4FCF;
+  }
