@@ -375,3 +375,16 @@ header p {
 .remember span {
   color: #7c78b8;
 }
+
+/* MapComponent.css */
+
+.map-container {
+  display: flex;
+  height: 100vh; /* Full height of the viewport */
+}
+
+#map {
+  flex: 1;
+  height: 100%;
+  width: 50%; /* Adjust the width to cover 50% of the screen */
+}
