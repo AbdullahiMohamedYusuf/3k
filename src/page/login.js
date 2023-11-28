@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
+import AuthContext from "../utils/authContext";
 import "./login.css";
 function Login() {
+  let { loginUser } = useContext(AuthContext);
   return (
     <main>
       <div className="LoginContainer">
@@ -27,15 +29,14 @@ function Login() {
         <div class="container5">
           <div class="screen">
             <div class="screen__content">
-              <form class="login">
+              <form class="login" onSubmit={loginUser}>
                 <div class="login__field">
                   <i class="login__icon fas fa-user"></i>
                   <input
-                    type="email"
+                    type="text"
                     class="login__input"
-                    placeholder=" Email"
-                    name="email"
-
+                    placeholder=" username"
+                    name="username"
                   />
                 </div>
                 <div class="login__field">
@@ -44,6 +45,7 @@ function Login() {
                     type="password"
                     class="login__input"
                     placeholder="Password"
+                    name="password"
                   />
                 </div>
                 <button class="button login__submit">

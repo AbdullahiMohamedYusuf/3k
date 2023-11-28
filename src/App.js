@@ -5,7 +5,8 @@ import React from "react";
 import Sign from "./page/sign";
 import PrivateRoute from "./utils/PrivateRoute";
 import { AuthProvider } from "./utils/authContext";
-
+import Chapters from "./components/Quran/Chapters";
+import Res from './page/RM'
 function App() {
   return (
     <Router>
@@ -14,6 +15,9 @@ function App() {
           <Route path="/" exact element={<Header />} />
           <Route path="/login" element={<Login />} />
           <Route path="/sign-up" element={<Sign />} />
+          < Route path="/quran" element={<Chapters />}/>
+          < Route path="/find" element={<Res />}/>
+
         </Routes>
       </AuthProvider>
     </Router>

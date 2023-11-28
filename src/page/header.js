@@ -1,22 +1,31 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../style.css";
 import Cards from "../components/cards";
 import Jobbs from "../components/cards";
 import { TypeAnimation } from "react-type-animation";
 import Prayer from "../components/prayer";
 import LiveClockUpdate from "../components/Clock";
+import AuthContext from "../utils/authContext";
 import UniquePrayerTimesRow from "../components/FetchPrayerTime";
+import Chapters from "../components/Quran/Chapters";
 function Header() {
+  let { user } = useContext(AuthContext);
+
   const resturangs = [
     {
       icon: "fa-solid fa-mosque fa",
       title: "Find your Local Mosques",
-      p: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, sequi.",
+      p: "Immerse yourself in the beauty of Islamic architecture and find a welcoming space",
     },
     {
       icon: "fa-solid fa-shop fa",
       title: "Halal Resturants",
-      p: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, sequi.",
+      p: "Explore the rich tapestry of halal cuisine in your city.",
+    },
+    {
+      icon: "fa-solid fa-book-quran fa",
+      title: "Duas",
+      p: "Experience the profound essence of spiritual connection through duas",
     },
   ];
 
@@ -104,6 +113,7 @@ function Header() {
         </div>
       </div>
       <div className="content_card">
+        <h2 className="Super-title">Awesome <span>Features</span></h2>
         <div className="cards-container">
           {resturangs.map((item) => {
             return <Cards icon={item.icon} title={item.title} p={item.p} />;
@@ -115,6 +125,9 @@ function Header() {
         <h2>
           LEARN MORE <span>ABOUT US</span>
         </h2>
+        <span class="dot"></span>
+        <span class="dot2"></span>
+        <span class="dot3"></span>
         <div className="content">
           <div className="imageP">
             <img
@@ -124,19 +137,31 @@ function Header() {
           </div>
           <div className="discription">
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum
-              eaque laborum eligendi ipsa totam error dicta labore nihil
-              doloremque obcaecati architecto aspernatur illum necessitatibus
-              sequi, optio voluptates est modi, dolore facilis? Cumque soluta
-              quisquam, magni labore perferendis recusandae voluptates impedit,
-              doloremque doloribus cum ex alias unde, incidunt harum
-              consectetur. Repellat voluptatibus corrupti dolor, consequuntur,
-              velit odio est quae similique rerum, itaque provident modi tempore
-              quaerat non harum expedita. Nostrum incidunt ut vero vitae
-              explicabo voluptatibus iste. Nisi perferendis officiis eos
-              accusamus earum voluptatem quam consequuntur dolor, molestias,
-              ipsum non rem, impedit similique maiores hic praesentium magni
-              alias fugit iste veritatis.
+              We believe in fostering a sense of unity and spiritual connection
+              within the global Islamic community. Our platform is dedicated to
+              providing essential services that enhance your religious
+              experience, making it easier for you to embrace and celebrate your
+              faith.
+              <br />
+              <br />
+              Never miss a prayer again with our accurate and up-to-date prayer
+              times feature. Whether you're at home, work, or traveling, access
+              prayer timings effortlessly to align your daily routine with the
+              divine.
+              <br />
+              <br />
+              Locate mosques in your area with our user-friendly mosque finder.
+              Immerse yourself in the beauty of Islamic architecture and find a
+              welcoming space for your spiritual journey. Connect with your
+              local community and discover events that bring us together in
+              worship and celebration.
+              <br />
+              <br />
+              Explore the rich tapestry of halal cuisine in your city. Our
+              comprehensive database of halal restaurants ensures you can savor
+              delicious meals without compromising your beliefs. From casual
+              dining to fine cuisine, discover the diverse flavors of halal
+              gastronomy.
             </p>
             <button>
               Continue <i class="fa-solid fa-chevron-right"></i>
@@ -144,12 +169,18 @@ function Header() {
           </div>
         </div>
       </div>
+      
       <div className="famous">
         <div className="title">
           <h1>Hello</h1>
           <div className="line"></div>
         </div>
       </div>
+      {user ? (
+        <p>Welcome, {user.username}!</p>
+      ) : (
+        <p>Please log in to see user data</p>
+      )}
     </div>
   );
 }

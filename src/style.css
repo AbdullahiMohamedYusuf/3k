@@ -9,7 +9,8 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  /*font-family: "Open Sans", sans-serif;*/
+  font-family: helvetica, arial;
   text-decoration: none;
   list-style: none;
 }
@@ -163,11 +164,9 @@ header p {
 }
 
 .iso h4 {
-  font-family: "Open Sans", sans-serif;
   font-weight: lighter;
 }
 .halal {
-  font-family: "Dancing Script", cursive;
   font-size: 60px;
 }
 .bubble {
@@ -217,8 +216,9 @@ header p {
   border-radius: 10px;
 }
 .discription p {
-  font-size: 20px;
+  font-size: 15px;
   line-height: 1.8;
+
 }
 .discription button {
   background-color: var(--Background);
@@ -298,6 +298,19 @@ header p {
   display: flex;
   flex-direction: column;
   margin-left: 30px;
+  width: 30px;
+}
+.Super-title{
+  font-size: 50px;
+}
+.Super-title span {
+  color: #5d54a4;
+}
+.content_card {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  
 }
 .content_2 {
   position: sticky;
@@ -333,7 +346,7 @@ header p {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: crimson;
+  background: #7c78b8;
 }
 
 /* Handle on hover */

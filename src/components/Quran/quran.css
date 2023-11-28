@@ -1,0 +1,72 @@
+.quran {
+    height: 1000px;
+    position: relative;
+  }
+  
+  .heightContain {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    width: 700px;
+    font-size: 30px;
+    color: #d4d3e8;
+  }
+
+  .displayQ {
+    
+  }
+  .chapters {
+    width: 25%;
+    background-color: #5d54a4;
+    height: 100%;
+    overflow-y: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+    
+    
+  }
+  .scrollable {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .chapter{
+    display: flex;
+    align-items: center;
+    text-align: end;
+    gap: 10%;
+    padding: 3px;
+    background-color: transparent;
+    border:none;
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;
+  }
+  button {
+    
+  }
+  .chapter:hover {
+    background-color: #7c78b8;
+    border-radius:10px;
+    width: 100%;
+  }
+  
+  .duz {
+    width: 15%;
+    background-color: #444;
+    height: 100%;
+    overflow-y: auto;
+    padding: 20px;
+  }
+  
+  .middleSpace {
+    flex: 1;
+    background-color: #222; /* Optional: Adding background color for visualization */
+  }
+  
