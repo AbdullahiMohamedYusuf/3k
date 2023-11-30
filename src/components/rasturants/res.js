@@ -3,14 +3,7 @@ import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 import markerIcon from '../../images/pinRed.png'; // Replace with the path to your custom marker image
 
-const addresses = [
-  'mjölbyplan 4, Sweden',
-  'storbyplan, Sweden',
-  'degerbygränd, Sweden',
-  'svennebygränd, Sweden'
-];
-
-const MapComponent = () => {
+const MapComponent = ({ addresses, selectedAddress }) => {
   useEffect(() => {
     const map = L.map('map').setView([59.3293, 18.0686], 6); // Center the map on Stockholm with zoom level 6
 
@@ -21,8 +14,8 @@ const MapComponent = () => {
 
     const geocodeAddresses = async () => {
       try {
-        for (const address of addresses) {
-          const response = await fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(address)}`);
+        for (const addressData of addresses) {
+          const response = await fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(addressData.Adress)}`);
           const data = await response.json();
           if (data && data.length > 0) {
             const { lat, lon } = data[0];
@@ -33,7 +26,12 @@ const MapComponent = () => {
               iconAnchor: [16, 32]
             });
 
-            L.marker([parseFloat(lat), parseFloat(lon)], { icon: customIcon }).addTo(map);
+            const marker = L.marker([parseFloat(lat), parseFloat(lon)], { icon: customIcon }).addTo(map);
+            
+            if (selectedAddress && addressData === selectedAddress) {
+              map.setView([parseFloat(lat), parseFloat(lon)], 13); // Zoom in on the selected address
+              marker.bindPopup(`<b>${addressData.Namn}</b><br>${addressData.Adress}`).openPopup();
+            }
           }
         }
       } catch (error) {
@@ -46,10 +44,10 @@ const MapComponent = () => {
     return () => {
       map.remove();
     };
-  }, []);
+  }, [addresses, selectedAddress]);
 
   return (
-    <div id="map" style={{ height: '500px' }}></div>
+    <div id="map"></div>
   );
 };
 

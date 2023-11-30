@@ -16,7 +16,7 @@
 }
 
 nav {
-  color: #fff;
+  color: #777;
   align-items: center;
   display: flex;
   height: 100px;
@@ -377,14 +377,25 @@ header p {
 }
 
 /* MapComponent.css */
-
+.Rm {
+  overflow:hidden;
+}
+.Rm a {
+  color: #000
+}
 .map-container {
   display: flex;
   height: 100vh; /* Full height of the viewport */
+  flex-direction: row;
+  gap: 2%;
+  
 }
 
 #map {
   flex: 1;
   height: 100%;
   width: 50%; /* Adjust the width to cover 50% of the screen */
+  top: 1%;
+  position: relative;
 }
+

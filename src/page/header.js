@@ -8,6 +8,7 @@ import LiveClockUpdate from "../components/Clock";
 import AuthContext from "../utils/authContext";
 import UniquePrayerTimesRow from "../components/FetchPrayerTime";
 import Chapters from "../components/Quran/Chapters";
+import Head from "../components/head";
 function Header() {
   let { user } = useContext(AuthContext);
 
@@ -32,29 +33,7 @@ function Header() {
   return (
     <div>
       <div className="MainHeader">
-        <nav>
-          <div class="container">
-            <div class="menu">
-              <i class="fa-sharp fa-light fa-utensils"></i>
-              <ul>
-                <li>
-                  <a href="#">Resturant</a>
-                </li>
-                <li>
-                  <a href="#">Shops</a>
-                </li>
-                <li>
-                  <a href="#">Moskés</a>
-                </li>
-              </ul>
-            </div>
-            <div class="buttons">
-              <button>
-                <a href="/login">Login</a>
-              </button>
-            </div>
-          </div>
-        </nav>
+        <Head />
         <header>
           <div class="container2">
             <div class="iso">
