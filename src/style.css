@@ -381,7 +381,7 @@ header p {
 .Rm {
   overflow-y: hidden;
   display: flex;
-  background-color: #e3edf7;
+  background-color: #ffff ;
 }
 .RM_Container {
   overflow-y: hidden;
@@ -464,7 +464,7 @@ header p {
   margin: 0px;
   padding: 10px;
   border-radius: 8px;
-  background: #e3edf7;
+  background: #f0f1f3;
   box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
     -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
 }
@@ -549,8 +549,7 @@ input[type="radio"] {
   display: flex;
   gap: 1%;
   align-items: center;
-  margin-left: 10%;
-  margin-top: 10%;
+
   position: sticky;
 }
 
@@ -581,4 +580,32 @@ input[type="radio"] {
 
   /* Other styles for the list-container */
   /* ... */
+}
+
+
+.containCategory {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+
+.containCategory input{
+  width: 450px;
+  margin-top: 4%;
+  padding: 10px;
+  border:none;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(187, 187, 187, 0.7);
+    outline: none;
+    color: #3f3f3f;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  width: 700px;
+  gap: 2%;
+  
 }

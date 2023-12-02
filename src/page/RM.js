@@ -4,6 +4,7 @@ import addressesData from "../components/rasturants/capitalized_api_data (2).jso
 import "./RM.css"; // Import the stylesheet
 import Collapsible from "../components/Collapsible";
 import Head from "../components/head";
+import Dropdown from "../components/dropdown";
 
 function RM() {
   const [selectedAddress, setSelectedAddress] = useState(null);
@@ -27,22 +28,29 @@ function RM() {
             <button id="return"><i class="fa-solid fa-arrow-left"></i></button>
             <button>Add</button>
           </div>
-          <div className="colors">
-            <div className="typeName">
-              <div className="boxTypeR"></div>
-              <p>Moské</p>
+          <div className="containCategory">
+            <div className="colors">
+              <div className="typeName">
+                <div className="boxTypeR"></div>
+                <p>Moské</p>
+              </div>
+              <div className="typeName">
+                <div className="boxTypeB"></div>
+                <p>Kafé</p>
+              </div>
+              <div className="typeName">
+                <div cslassName="boxTypeY"></div>
+                <p>kaffebar</p>
+              </div>
+              <div className="typeName">
+                <div className="boxTypeZ"></div>
+                <p>restaurang</p>
+              </div>
+
             </div>
-            <div className="typeName">
-              <div className="boxTypeB"></div>
-              <p>Kafé</p>
-            </div>
-            <div className="typeName">
-              <div className="boxTypeY"></div>
-              <p>kaffebar</p>
-            </div>
-            <div className="typeName">
-              <div className="boxTypeZ"></div>
-              <p>restaurang</p>
+            <div className="search">
+              <input type="text" name="City" id="" placeholder="Search up City" />
+              <Dropdown />
             </div>
           </div>
           <div className="list-container">
