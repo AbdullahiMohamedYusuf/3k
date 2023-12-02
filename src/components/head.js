@@ -2,7 +2,7 @@ import React from "react";
 
 function Head() {
   return (
-    <div>
+    <div className="Mega">
       <nav>
         <div class="container">
           <div class="menu">

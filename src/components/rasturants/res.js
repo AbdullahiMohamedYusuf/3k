@@ -52,3 +52,4 @@ const MapComponent = ({ addresses, selectedAddress }) => {
 };
 
 export default MapComponent;
+  

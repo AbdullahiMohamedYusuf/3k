@@ -27,7 +27,7 @@ nav {
   font-size: 100px;
 }
 .MainHeader {
-  position:relative;
+  position: relative;
   background-color: #000;
   z-index: 0;
   height: 1000px;
@@ -218,7 +218,6 @@ header p {
 .discription p {
   font-size: 15px;
   line-height: 1.8;
-
 }
 .discription button {
   background-color: var(--Background);
@@ -300,7 +299,7 @@ header p {
   margin-left: 30px;
   width: 30px;
 }
-.Super-title{
+.Super-title {
   font-size: 50px;
 }
 .Super-title span {
@@ -310,13 +309,12 @@ header p {
   align-items: center;
   display: flex;
   flex-direction: column;
-  
 }
 .content_2 {
   position: sticky;
   top: 0;
 }
-.fai{
+.fai {
   transition: 0.5s;
 }
 .fai:hover {
@@ -356,9 +354,10 @@ header p {
 
 .prayer {
   display: flex;
-  max-width:80%;
-  margin:auto;
-  align-items: center; z-index: 1;
+  max-width: 80%;
+  margin: auto;
+  align-items: center;
+  z-index: 1;
 }
 .remember {
   width: 50%;
@@ -377,57 +376,209 @@ header p {
 }
 
 /* MapComponent.css */
+
+/* Existing CSS */
 .Rm {
-  overflow: hidden;
+  overflow-y: hidden;
   display: flex;
+  background-color: #e3edf7;
+}
+.RM_Container {
+  overflow-y: hidden;
+}
+.RM_Container nav {
+  background-color: #000;
+}
+.Mega nav a {
+  color: #fff;
 }
 
-.Rm a {
-  color: #000;
-}
-
+/* Updated styles for the containers */
 .map-container {
   display: flex;
   height: 100vh;
   flex-direction: row;
-  gap: 2%;
   flex: 1;
 }
 
 #map {
   flex: 1;
   height: 100%;
-  width: 50%; /* Adjust the width to cover 50% of the screen */
-  top: 1%;
+  width: 50%;
   position: relative;
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
 }
 
+.MegaContainer {
+  height: 100vh;
+  overflow-y: auto;
+  width: 50%;
+  box-sizing: border-box;
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
+  align-items: center;
+  overflow-y: hidden;
+}
+
+#return {
+  box-shadow: 0px 10px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(187, 187, 187, 0.7);
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 20px;
+    left: 30px;
+    border-radius: 10px;
+    border:none;
+    cursor: pointer;
+    background-color: #e3edf7;
+    color: #000
+}
+#return:active {
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(187, 187, 187, 0.7);
+}
+.buttons {
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+  padding:5px;
+}
+
+/* Additional styles for list items */
+
+.accordion {
+  margin: 60px auto;
+  width: 600px;
+}
 .list-container {
-  flex: 1;
-  height: 100vh; /* Set height to cover 100% of the viewport height */
-  overflow-y: auto; /* Enable vertical scrollbar when needed */
-  padding: 20px;
+  width: 90%;
+  margin-left: 5%;
+}
+.accordion li {
+  list-style-type: none;
+  width: 100%;
+  margin: 0px;
+  padding: 10px;
+  border-radius: 8px;
+  background: #e3edf7;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
 }
 
-.list-container ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+.accordion li label {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+label::before {
+  content: "+";
+  margin-right: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+input[type="radio"] {
+  display: none;
+}
+.accordion .accordion-content {
+  color: #555;
+  padding: 0 10px;
+  line-height: 26px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type="radio"]:checked + label + .accordion-content {
+  max-height: 400px;
+  padding: 10px 10px 20px;
+}
+
+.addressLabel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.accordion input[type="radio"]:checked + label::before {
+  content: "-";
+}
+
+.boxTypeB {
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  border-radius: 50%;
+}
+
+.boxTypeR {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.boxTypeY {
+  width: 10px;
+  height: 10px;
+  background-color: yellow;
+  border-radius: 50%;
+}
+.boxTypeZ {
+  width: 10px;
+  height: 10px;
+  background-color: blue;
+  border-radius: 50%;
+}
+
+.RM_Container nav a {
+  color: #000;
+}
+
+.colors {
+  display: flex;
+  gap: 1%;
+  align-items: center;
+  margin-left: 10%;
+  margin-top: 10%;
+  position: sticky;
+}
+
+.boxTypeR:hover {
+  padding: 6px;
+}
+.boxTypeB:hover {
+  padding: 6px;
+}
+.boxTypeY:hover {
+  padding: 6px;
+}
+.boxTypeZ:hover {
+  padding: 6px;
+}
+
+.typeName {
+  display: flex;
+  align-items: center;
+  width: 100px;
   gap: 10%;
 }
 
-.list-container li {
-  cursor: pointer;
-  margin-bottom: 20px;
-  transition: background-color 0.3s ease; /* Smooth hover transition */
-  border: 1px solid #888;
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 10px 10px 30px  #999;
-}
+.list-container {
+  /* Set a fixed height for the list-container and enable scrolling */
+  height: calc(100vh - 20px); /* Adjust the height as needed */
+  overflow-y: auto; /* Enable scrolling for overflowing content */
 
-.list-container li:hover {
-  background-color: #f0f0f0;
+  /* Other styles for the list-container */
+  /* ... */
 }

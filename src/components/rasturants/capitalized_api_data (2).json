@@ -54,7 +54,7 @@
     {
         "Namn": "Notello Rolls Stockholm",
         "Adress": "Warfvinges väg 18, 112 18 Stockholm",
-        "Typ": "Kaffebar",
+        "Typ": "Kafé",
         "Nummer": "010-179 99 77",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -357,15 +357,6 @@
         "Stjärnor": 4.7
     },
     {
-        "Namn": "Hässelby Moskee",
-        "Adress": "N/A",
-        "Typ": "N/A",
-        "Nummer": "N/A",
-        "Bild": "N/A",
-        "Prisklass": "$$",
-        "Stjärnor": "N/A"
-    },
-    {
         "Namn": "Moské Alrahma مسجد الرحمه‎",
         "Adress": "Vällingbyvägen 152, 162 63 Vällingby",
         "Typ": "Moské",
@@ -475,15 +466,15 @@
         "Prisklass": "$$",
         "Stjärnor": 4.5
     },
-  {
-    "Namn": "Mangal BBQ Solna Centrum",
-    "Adress": "Solnavägen 19, 171 45 Solna",
-    "Typ": "Resturang",
-    "Nummer": "073-821 30 18",
-    "Bild": "N/A",
-    "Prisklass": "$$",
-    "Stjärnor": 3.3
-  },
+    {
+        "Namn": "Mangal BBQ Solna Centrum",
+        "Adress": "Solnavägen 19, 171 45 Solna",
+        "Typ": "Resturang",
+        "Nummer": "073-821 30 18",
+        "Bild": "N/A",
+        "Prisklass": "$$",
+        "Stjärnor": 3.3
+    },
     {
         "Namn": "Mangal BBQ Express",
         "Adress": "Takpannegatan 6, 754 60 Uppsala",
@@ -494,7 +485,7 @@
         "Stjärnor": 4.1
     },
     {
-      "Namn": "Amida kolgrill Sundbyberg",
+        "Namn": "Amida kolgrill Sundbyberg",
         "Adress": "Tulegatan 10, 172 78 Sundbyberg",
         "Typ": "Resturang",
         "Nummer": "08-28 00 44",
@@ -726,7 +717,7 @@
     {
         "Namn": "Hello Boba Mall Of Scandavia",
         "Adress": "Stjärntorget 2, 169 79 Solna",
-        "Typ": "Resturang",
+        "Typ": "Kafé",
         "Nummer": "076-313 94 82",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -735,7 +726,7 @@
     {
         "Namn": "Hello Boba Täby Centrum",
         "Adress": "Stora Marknadsvägen, 183 34 Täby",
-        "Typ": "N/A",
+        "Typ": "Kafé",
         "Nummer": "N/A",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -744,7 +735,7 @@
     {
         "Namn": "Hello Boba Liljeholmen",
         "Adress": "Liljeholmstorget 7, 117 63 Stockholm",
-        "Typ": "N/A",
+        "Typ": "Kafé",
         "Nummer": "072-038 33 83",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -855,18 +846,9 @@
         "Stjärnor": 4.4
     },
     {
-        "Namn": "مسجد masjed mosken",
-        "Adress": "N/A",
-        "Typ": "N/A",
-        "Nummer": "N/A",
-        "Bild": "N/A",
-        "Prisklass": "$$",
-        "Stjärnor": "N/A"
-    },
-    {
         "Namn": "Masjid Al-Imam Malek",
         "Adress": "Safirgränd 36, 126 79 Hägersten",
-        "Typ": "N/A",
+        "Typ": "Moské",
         "Nummer": "070-777 59 30",
         "Bild": "N/A",
         "Stjärnor": 4.6
@@ -874,7 +856,7 @@
     {
         "Namn": "Masjid al-Furqân",
         "Adress": "Ekholmsvägen 365, 127 45 Skärholmen",
-        "Typ": "N/A",
+        "Typ": "Moské",
         "Nummer": "N/A",
         "Bild": "N/A",
         "Stjärnor": 4.7
@@ -882,24 +864,15 @@
     {
         "Namn": "Masjid Ahlal Bait",
         "Adress": "Vänortsringen 1, 195 30 Märsta",
-        "Typ": "N/A",
+        "Typ": "Moské",
         "Nummer": "0707755802",
         "Bild": "N/A",
         "Stjärnor": 4.7
     },
     {
-        "Namn": "Masjid Mosque Quran Sunnah",
-        "Adress": "N/A",
-        "Typ": "N/A",
-        "Nummer": "N/A",
-        "Bild": "N/A",
-        "Prisklass": "$$",
-        "Stjärnor": "N/A"
-    },
-    {
         "Namn": "Izmir Kebab HB",
         "Adress": "Hötorgshallen 29 A, 111 57 Stockholm",
-        "Typ": "N/A",
+        "Typ": "Resturang",
         "Nummer": "08-21 76 03",
         "Bild": "N/A",
         "Prisklass": "$",
@@ -908,7 +881,7 @@
     {
         "Namn": "La Gazelle",
         "Adress": "Hötorgshallen 40, 111 57 Stockholm",
-        "Typ": "N/A",
+        "Typ": "Resturang",
         "Nummer": "076-291 26 12",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -917,7 +890,7 @@
     {
         "Namn": "Negashi Moské",
         "Adress": "Skolgången 2, 174 52 Sundbyberg",
-        "Typ": "N/A",
+        "Typ": "Moské",
         "Nummer": "076-562 05 09",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -926,7 +899,7 @@
     {
         "Namn": "Alby Matcenter",
         "Adress": "Alby centrum, 145 57 Norsborg",
-        "Typ": "N/A",
+        "Typ": "Affär",
         "Nummer": "08-531 721 71",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -935,7 +908,7 @@
     {
         "Namn": "Sollentuna Matcenter",
         "Adress": "Malmvägen 18A, 191 60 Sollentuna",
-        "Typ": "N/A",
+        "Typ": "Affär",
         "Nummer": "08-96 36 11",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -944,7 +917,7 @@
     {
         "Namn": "Fittja Supermarket MACKROGREEN AB",
         "Adress": "Krögarvägen 10, 145 52 Norsborg",
-        "Typ": "N/A",
+        "Typ": "Affär",
         "Nummer": "08-531 794 01",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -953,7 +926,7 @@
     {
         "Namn": "Matgrossen Högdalen",
         "Adress": "Högdalsgången 1, 124 42 Bandhagen",
-        "Typ": "N/A",
+        "Typ": "Affär",
         "Nummer": "073-760 95 91",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -962,7 +935,7 @@
     {
         "Namn": "Matvärlden Veddesta",
         "Adress": "Nettovägen 2-4, 175 41 Järfälla",
-        "Typ": "N/A",
+        "Typ": "Affär",
         "Nummer": "08-409 360 00",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -971,7 +944,7 @@
     {
         "Namn": "Kista Grossen",
         "Adress": "Torsnäsgatan 4-6, 164 40 Kista",
-        "Typ": "N/A",
+        "Typ": "Affär",
         "Nummer": "08-751 01 00",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -980,7 +953,7 @@
     {
         "Namn": "Himalaya Livs",
         "Adress": "Valhallavägen 67, 114 28 Stockholm",
-        "Typ": "N/A",
+        "Typ": "Affär",
         "Nummer": "08-673 13 52",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -989,7 +962,7 @@
     {
         "Namn": "Damascus Deli",
         "Adress": "Valhallavägen 75, 114 28 Stockholm",
-        "Typ": "N/A",
+        "Typ": "Affär",
         "Nummer": "073-515 55 14",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -998,7 +971,7 @@
     {
         "Namn": "Prima Gross",
         "Adress": "Danmarksgatan 32, 164 53 Kista",
-        "Typ": "N/A",
+        "Typ": "Affär",
         "Nummer": "073-526 52 07",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1007,7 +980,7 @@
     {
         "Namn": "Rinkeby matcenter",
         "Adress": "Rinkebytorget 8, 163 72 Spånga",
-        "Typ": "N/A",
+        "Typ": "Affär",
         "Nummer": "08-36 31 58",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1016,7 +989,7 @@
     {
         "Namn": "Brandbergens livs",
         "Adress": "Jungfruns gata 417, 136 60 Haninge",
-        "Typ": "N/A",
+        "Typ": "Affär",
         "Nummer": "073-892 95 57",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1025,7 +998,7 @@
     {
         "Namn": "Fittja matmarknad",
         "Adress": "Fittja Torg 21, 145 51 Norsborg",
-        "Typ": "N/A",
+        "Typ": "Affär",
         "Nummer": "08-740 13 37",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1034,7 +1007,7 @@
     {
         "Namn": "Rinkeby Orient Livs HB",
         "Adress": "Hinderstorps gränd 24, 163 72 Spånga",
-        "Typ": "N/A",
+        "Typ": "Affär",
         "Nummer": "072-729 00 62",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1043,7 +1016,7 @@
     {
         "Namn": "Orient Livs Tensta",
         "Adress": "Krällingegränd 33, 163 62 Spånga",
-        "Typ": "N/A",
+        "Typ": "Affär",
         "Nummer": "08-760 14 05",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1052,7 +1025,7 @@
     {
         "Namn": "BOC Sthlm",
         "Adress": "Pilottorget 8, 128 32 Skarpnäck",
-        "Typ": "N/A",
+        "Typ": "Resturang",
         "Nummer": "076-171 45 72",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1061,7 +1034,7 @@
     {
         "Namn": "Burger Mansion Stockholm",
         "Adress": "Harpsundsvägen 18, 124 58 Bandhagen",
-        "Typ": "N/A",
+        "Typ": "Resturang",
         "Nummer": "076-303 12 85",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1070,7 +1043,7 @@
     {
         "Namn": "Çok Hornsberg",
         "Adress": "Hornsbergs Strand 53, 112 16 Stockholm",
-        "Typ": "N/A",
+        "Typ": "Resturang",
         "Nummer": "08-715 15 01",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1079,7 +1052,7 @@
     {
         "Namn": "Çok Södermalm",
         "Adress": "Nytorgsgatan 33, 116 40 Stockholm",
-        "Typ": "N/A",
+        "Typ": "Resturang",
         "Nummer": "08-600 51 01",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1088,7 +1061,7 @@
     {
         "Namn": "Cizgara Kolgrill – Barkarby",
         "Adress": "Skälbyvägen 23, 175 64 Järfälla",
-        "Typ": "N/A",
+        "Typ": "Resturang",
         "Nummer": "08-36 63 76",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1097,7 +1070,7 @@
     {
         "Namn": "Orient Food Farsta Ab",
         "Adress": "Östmarksgatan 6, 123 42 Farsta",
-        "Typ": "N/A",
+        "Typ": "Affär",
         "Nummer": "072-838 50 76",
         "Bild": "N/A",
         "Prisklass": "$",
@@ -1106,7 +1079,7 @@
     {
         "Namn": "Cizgara Kolgrill – Hallunda",
         "Adress": "Hallundavägen, 145 68 Norsborg",
-        "Typ": "N/A",
+        "Typ": "Resturang",
         "Nummer": "08-531 899 88",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1115,7 +1088,7 @@
     {
         "Namn": "Cizgara Kolgrill – Årsta",
         "Adress": "Sandfjärdsgatan 14, 120 57 Årsta",
-        "Typ": "N/A",
+        "Typ": "Resturang",
         "Nummer": "08-508 630 30",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1124,7 +1097,7 @@
     {
         "Namn": "Cizgara Kolgrill – Södertälje",
         "Adress": "Mariekällgatan 14, 151 44 Södertälje",
-        "Typ": "N/A",
+        "Typ": "Resturang",
         "Nummer": "08-550 640 60",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1133,7 +1106,7 @@
     {
         "Namn": "Göteborgs moské",
         "Adress": "Myntgatan 4, 417 01 Göteborg",
-        "Typ": "N/A",
+        "Typ": "Moské",
         "Nummer": "031-22 29 33",
         "Bild": "N/A",
         "Stjärnor": 4.7
@@ -1141,7 +1114,7 @@
     {
         "Namn": "German Döner Kebab Skärholmen",
         "Adress": "Skärholmsvägen 7, 127 48 Skärholmen",
-        "Typ": "N/A",
+        "Typ": "Resturang",
         "Nummer": "073-761 10 06",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1150,7 +1123,7 @@
     {
         "Namn": "German Döner Kebab Gävle",
         "Adress": "Norra Kungsgatan 3, 803 20 Gävle",
-        "Typ": "N/A",
+        "Typ": "Resturang",
         "Nummer": "026-10 02 16",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1159,7 +1132,7 @@
     {
         "Namn": "German Döner Kebab Laxå (World's Largest Kebab Brand)",
         "Adress": "Revirvägen 15, 695 30 Laxå",
-        "Typ": "N/A",
+        "Typ": "Resturang",
         "Nummer": "073-898 76 53",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1168,7 +1141,7 @@
     {
         "Namn": "German Döner Kebab Lund",
         "Adress": "Skarpskyttevägen 3, 226 42 Lund",
-        "Typ": "N/A",
+        "Typ": "Resturang",
         "Nummer": "072-701 70 03",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1177,7 +1150,7 @@
     {
         "Namn": "German Döner Kebab Umeå",
         "Adress": "Marknadsgatan 3, 904 22 Umeå",
-        "Typ": "N/A",
+        "Typ": "Resturang",
         "Nummer": "076-774 66 11",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1186,7 +1159,7 @@
     {
         "Namn": "German Döner Kebab Rosengård",
         "Adress": "Frölichs väg 3, 213 68 Malmö",
-        "Typ": "N/A",
+        "Typ": "Resturang",
         "Nummer": "076-203 07 55",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1195,7 +1168,7 @@
     {
         "Namn": "German Döner Kebab Södervärn",
         "Adress": "Spårvägsgatan 4, 214 27 Malmö",
-        "Typ": "N/A",
+        "Typ": "Resturang",
         "Nummer": "073-595 55 00",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1204,7 +1177,7 @@
     {
         "Namn": "German Döner Kebab Gustav Adolfs Torg",
         "Adress": "Gustav Adolfs torg 6, 211 39 Malmö",
-        "Typ": "N/A",
+        "Typ": "Resturang",
         "Nummer": "076-920 10 79",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1213,7 +1186,7 @@
     {
         "Namn": "El Birria",
         "Adress": "Gullfossgatan 3, 164 40 Kista",
-        "Typ": "N/A",
+        "Typ": "Resturang",
         "Nummer": "08-31 66 69",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1222,7 +1195,7 @@
     {
         "Namn": "Mangal Turkisk Kolgrill",
         "Adress": "Torp Köpcentrum, 451 76 Uddevalla",
-        "Typ": "N/A",
+        "Typ": "Resturang",
         "Nummer": "073-997 71 90",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1231,7 +1204,7 @@
     {
         "Namn": "Mangal Turkisk Grill & Meze - Kolgrill Jönköping",
         "Adress": "Sjukhusgatan 12, 553 05 Jönköping",
-        "Typ": "N/A",
+        "Typ": "Resturang",
         "Nummer": "070-606 34 44",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1240,7 +1213,7 @@
     {
         "Namn": "Mangal BBQ Express",
         "Adress": "Takpannegatan 6, 754 60 Uppsala",
-        "Typ": "N/A",
+        "Typ": "Resturang",
         "Nummer": "018-20 13 13",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1249,7 +1222,7 @@
     {
         "Namn": "notello rolls Malmö",
         "Adress": "Bergsgatan 41A, 214 22 Malmö",
-        "Typ": "N/A",
+        "Typ": "Kafé",
         "Nummer": "010-179 99 77",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1258,7 +1231,7 @@
     {
         "Namn": "Mae Thai Express Rinkeby",
         "Adress": "Rinkebytorget 1, 163 73 Spånga",
-        "Typ": "N/A",
+        "Typ": "Resturang",
         "Nummer": "070-303 70 27",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1267,7 +1240,7 @@
     {
         "Namn": "Mae Thai Express Vallentuna",
         "Adress": "Tuna Torg 4, 186 31 Vallentuna",
-        "Typ": "N/A",
+        "Typ": "Resturang",
         "Nummer": "072-991 53 35",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1276,7 +1249,7 @@
     {
         "Namn": "Spice Villa",
         "Adress": "Tenstagången 25, 163 64 Spånga",
-        "Typ": "N/A",
+        "Typ": "Resturang",
         "Nummer": "076-566 63 61",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1285,7 +1258,7 @@
     {
         "Namn": "Gelatonova Odengatan",
         "Adress": "Odengatan 36, 113 51 Stockholm",
-        "Typ": "N/A",
+        "Typ": "Glassbar",
         "Nummer": "08-591 186 86",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1294,7 +1267,7 @@
     {
         "Namn": "Gelatonova Norra Stationsgatan",
         "Adress": "Norra Stationsgatan 83, 113 65 Stockholm",
-        "Typ": "N/A",
+        "Typ": "Glassbar",
         "Nummer": "08-591 186 86",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1303,7 +1276,7 @@
     {
         "Namn": "Döner Factory AVENYN",
         "Adress": "Basargatan 10, 411 10 Göteborg",
-        "Typ": "N/A",
+        "Typ": "Resturang",
         "Nummer": "076-021 23 60",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1312,7 +1285,7 @@
     {
         "Namn": "Lilla Istanbul",
         "Adress": "Färgfabriksgatan 1, 417 24 Göteborg",
-        "Typ": "N/A",
+        "Typ": "Resturang",
         "Nummer": "031-22 45 66",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1321,7 +1294,7 @@
     {
         "Namn": "Saray Grill & Kök - Göteborg",
         "Adress": "Alekärrsgatan 10, 415 25 Göteborg",
-        "Typ": "N/A",
+        "Typ": "Resturang",
         "Nummer": "031-48 98 00",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1330,7 +1303,7 @@
     {
         "Namn": "Lai Thai Restaurang Gamlestan",
         "Adress": "Artillerigatan 8, 415 13 Göteborg",
-        "Typ": "N/A",
+        "Typ": "Resturang",
         "Nummer": "031-25 33 50",
         "Bild": "N/A",
         "Prisklass": "$",
@@ -1339,7 +1312,7 @@
     {
         "Namn": "Aliwan Alshami",
         "Adress": "Södra Förstadsgatan 90, 214 20 Malmö",
-        "Typ": "N/A",
+        "Typ": "Resturang",
         "Nummer": "040-44 06 66",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1348,7 +1321,7 @@
     {
         "Namn": "Konya Grill",
         "Adress": "Eriksfältsgatan 30, 214 55 Malmö",
-        "Typ": "N/A",
+        "Typ": "Resturang",
         "Nummer": "040-97 40 40",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1357,7 +1330,7 @@
     {
         "Namn": "Mevlana Kolgrill Norsborg",
         "Adress": "Tingstorget 4, 145 56 Norsborg",
-        "Typ": "N/A",
+        "Typ": "Resturang",
         "Nummer": "08-777 68 67",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1366,7 +1339,7 @@
     {
         "Namn": "Mevlana Kolgrill Järfälla",
         "Adress": "Flyginfarten 4, 177 44 Järfälla",
-        "Typ": "N/A",
+        "Typ": "Resturang",
         "Nummer": "08-621 06 21",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1375,7 +1348,7 @@
     {
         "Namn": "Mevlana Kolgrill Malmö",
         "Adress": "Ystadvägen 34, 214 45 Malmö",
-        "Typ": "N/A",
+        "Typ": "Resturang",
         "Nummer": "040-871 52",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1384,7 +1357,7 @@
     {
         "Namn": "Jasmin Al Sham",
         "Adress": "Södra Förstadsgatan 23B, 211 43 Malmö",
-        "Typ": "N/A",
+        "Typ": "Resturang",
         "Nummer": "040-21 11 20",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1393,7 +1366,7 @@
     {
         "Namn": "Sofra kolgrill Norsborg",
         "Adress": "Segersbyvägen 20, 145 63 Norsborg",
-        "Typ": "N/A",
+        "Typ": "Resturang",
         "Nummer": "08-531 700 30",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1402,7 +1375,7 @@
     {
         "Namn": "Sofra kolgrill Jönköping",
         "Adress": "Sparvhöksgatan 1, 556 11 Jönköping",
-        "Typ": "N/A",
+        "Typ": "Resturang",
         "Nummer": "036-14 50 50",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1412,7 +1385,7 @@
     {
         "Namn": "Sofra kolgrill Järfälla",
         "Adress": "Tornérvägen 27, 177 30 Järfälla",
-        "Typ": "N/A",
+        "Typ": "Resturang",
         "Nummer": "08-32 24 69",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1421,7 +1394,7 @@
     {
         "Namn": "Pascha Pizza & Kolgrill",
         "Adress": "Fittja Torg 21, 145 51 Norsborg",
-        "Typ": "N/A",
+        "Typ": "Resturang",
         "Nummer": "08-531 769 62",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1430,7 +1403,7 @@
     {
         "Namn": "Öz Antepli / Båhem konditori",
         "Adress": "Stråkvägen 1, 169 35 Solna",
-        "Typ": "N/A",
+        "Typ": "Bageri",
         "Nummer": "072-251 66 15",
         "Bild": "N/A",
         "Prisklass": "$",
@@ -1439,7 +1412,7 @@
     {
         "Namn": "Fittja Supermarket MACKROGREEN AB",
         "Adress": "Krögarvägen 10, 145 52 Norsborg",
-        "Typ": "N/A",
+        "Typ": "Affär",
         "Nummer": "08-531 794 01",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1448,7 +1421,7 @@
     {
         "Namn": "Matvärlden Vällingby",
         "Adress": "Årevägen 20, 162 61 Vällingby",
-        "Typ": "N/A",
+        "Typ": "Affär",
         "Nummer": "08-598 829 00",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1457,7 +1430,7 @@
     {
         "Namn": "Matvärlden Tensta",
         "Adress": "Tenstagången 7, 163 64 Spånga",
-        "Typ": "N/A",
+        "Typ": "Affär",
         "Nummer": "08-564 710 00",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1466,7 +1439,7 @@
     {
         "Namn": "Restaurang Saffran",
         "Adress": "Hanstavägen 55 F, 164 91 Kista",
-        "Typ": "N/A",
+        "Typ": "Resturang",
         "Nummer": "08-82 40 43",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1475,7 +1448,7 @@
     {
         "Namn": "Istanbul Kebab & Grill",
         "Adress": "Danmarksgatan 30, 164 53 Kista",
-        "Typ": "N/A",
+        "Typ": "Resturang",
         "Nummer": "08-750 98 78",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1484,7 +1457,7 @@
     {
         "Namn": "Kebab & Falafel Kungen",
         "Adress": "Kistagången 1, 164 42 Kista",
-        "Typ": "N/A",
+        "Typ": "Resturang",
         "Nummer": "073-683 33 42",
         "Bild": "N/A",
         "Prisklass": "$",
@@ -1493,7 +1466,7 @@
     {
         "Namn": "Lemon Garden Solna",
         "Adress": "Parkvägen 2, 169 35 Solna",
-        "Typ": "N/A",
+        "Typ": "Kafé",
         "Nummer": "073-525 39 84",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1502,25 +1475,16 @@
     {
         "Namn": "Lemon garden Jönköping",
         "Adress": "Brunnsgatan 16, 553 17 Jönköping",
-        "Typ": "N/A",
+        "Typ": "Kafé",
         "Nummer": "036-466 55",
         "Bild": "N/A",
         "Prisklass": "$$",
         "Stjärnor": 4.4
     },
     {
-        "Namn": "Lemon Garden Skövde",
-        "Adress": "N/A",
-        "Typ": "N/A",
-        "Nummer": "N/A",
-        "Bild": "N/A",
-        "Prisklass": "$$",
-        "Stjärnor": "N/A"
-    },
-    {
         "Namn": "Lemon Garden Västerås",
         "Adress": "Sigurdsgatan 21, 721 30 Västerås",
-        "Typ": "N/A",
+        "Typ": "Kafé",
         "Nummer": "072-260 14 71",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1529,7 +1493,7 @@
     {
         "Namn": "Lemon Garden Malmö",
         "Adress": "Einar Hansens Esplanad 45, 211 13 Malmö",
-        "Typ": "N/A",
+        "Typ": "Kafé",
         "Nummer": "072-929 32 11",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1538,7 +1502,7 @@
     {
         "Namn": "Lemon Garden",
         "Adress": "Rosenlundsgatan 4, 411 20 Göteborg",
-        "Typ": "N/A",
+        "Typ": "Kafé",
         "Nummer": "079-339 78 33",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1547,7 +1511,7 @@
     {
         "Namn": "Hello Boba",
         "Adress": "Marconigatan 33-31, 421 44 Västra Frölunda",
-        "Typ": "N/A",
+        "Typ": "Kafé",
         "Nummer": "N/A",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1556,25 +1520,16 @@
     {
         "Namn": "Bram´s Burgers Huddinge",
         "Adress": "Novavägen 17, 141 44 Huddinge",
-        "Typ": "N/A",
-      "Nummer": "08-27 01 11",
+        "Typ": "Resturang",
+        "Nummer": "08-27 01 11",
         "Bild": "N/A",
         "Prisklass": "$$",
         "Stjärnor": 4.9
     },
     {
-        "Namn": "Rekas Burgers",
-        "Adress": "N/A",
-        "Typ": "N/A",
-        "Nummer": "N/A",
-        "Bild": "N/A",
-        "Prisklass": "$$",
-        "Stjärnor": "N/A"
-    },
-    {
         "Namn": "Somali Star",
         "Adress": "Rinkebytorget 8, 163 73 Spånga",
-        "Typ": "N/A",
+        "Typ": "Resturang",
         "Nummer": "076-165 67 39",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1583,7 +1538,7 @@
     {
         "Namn": "Marrakech Kista",
         "Adress": "Digitalgatan 10, 164 40 Kista",
-        "Typ": "N/A",
+        "Typ": "Buffé",
         "Nummer": "08-33 98 39",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1592,7 +1547,7 @@
     {
         "Namn": "Marrakech Solna Business Park",
         "Adress": "Svetsarvägen 5b, 171 41 Solna",
-        "Typ": "N/A",
+        "Typ": "Buffé",
         "Nummer": "08-33 98 39",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1601,7 +1556,7 @@
     {
         "Namn": "Marrakech Garnisonen",
         "Adress": "Karlavägen 100, 115 26 Stockholm",
-        "Typ": "N/A",
+        "Typ": "Buffé",
         "Nummer": "08-33 98 39",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1610,7 +1565,7 @@
     {
         "Namn": "Marrakech Lindhagensgatan",
         "Adress": "Lindhagensgatan 134, 112 16 Stockholm",
-        "Typ": "N/A",
+        "Typ": "Buffé",
         "Nummer": "08-33 98 39",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1619,7 +1574,7 @@
     {
         "Namn": "Marrakech Solna Strand",
         "Adress": "Solna strandväg 96, 171 54 Solna",
-        "Typ": "N/A",
+        "Typ": "Buffé",
         "Nummer": "08-33 98 39",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1628,7 +1583,7 @@
     {
         "Namn": "Marrakech Liljeholmskajen",
         "Adress": "Marieviksgatan 19a, 117 43 Stockholm",
-        "Typ": "N/A",
+        "Typ": "Buffé",
         "Nummer": "08-33 98 39",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1637,7 +1592,7 @@
     {
         "Namn": "Marrakech restaurang",
         "Adress": "Blickagången 9, 141 57 Huddinge",
-        "Typ": "N/A",
+        "Typ": "Buffé",
         "Nummer": "08-33 98 39",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1646,7 +1601,7 @@
     {
         "Namn": "DOST Restaurang & Festvåning",
         "Adress": "Danmarksgatan 55, 753 23 Uppsala",
-        "Typ": "N/A",
+        "Typ": "´Resturang",
         "Nummer": "018-55 05 05",
         "Bild": "N/A",
         "Prisklass": "$",
@@ -1655,7 +1610,7 @@
     {
         "Namn": "Lovely India - Indisk restaurang uppsala",
         "Adress": "Björkgatan 6, 753 24 Uppsala",
-        "Typ": "N/A",
+        "Typ": "Resturang",
         "Nummer": "018-470 00 04",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1664,7 +1619,7 @@
     {
         "Namn": "Haji Grill - Afgansk restaurang Uppsala",
         "Adress": "Bergsbrunnagatan 28, 753 23 Uppsala",
-        "Typ": "N/A",
+        "Typ": "Resturang",
         "Nummer": "018-40 43 43",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1673,7 +1628,7 @@
     {
         "Namn": "Mariehems Livs",
         "Adress": "Mariehemsvägen 7A, 906 54 Umeå",
-        "Typ": "N/A",
+        "Typ": "Affär",
         "Nummer": "090-12 00 30",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1682,7 +1637,7 @@
     {
         "Namn": "Pappa Thai Takeaway",
         "Adress": "Bondegatan 58, 116 33 Stockholm",
-        "Typ": "N/A",
+        "Typ": "Resturang",
         "Nummer": "08-22 07 33",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1691,7 +1646,7 @@
     {
         "Namn": "Grill Midtown Höganäs",
         "Adress": "Centralgatan 29, 263 38 Höganäs",
-        "Typ": "N/A",
+        "Typ": "Resturang",
         "Nummer": "073-755 00 96",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1700,7 +1655,7 @@
     {
         "Namn": "Krümel Cookies & Crumbs",
         "Adress": "Valhallavägen 53, 114 22 Stockholm",
-        "Typ": "N/A",
+        "Typ": "Kafé",
         "Nummer": "072-152 32 25 ",
         "Bild": "N/A",
         "Prisklass": "$$",
@@ -1709,7 +1664,7 @@
     {
         "Namn": "Diwan",
         "Adress": "Valhallavägen 153, 115 31 Stockholm",
-        "Typ": "restaurant ",
+        "Typ": "Resturang",
         "Nummer": "08-667 37 57",
         "Bild": "N/A",
         "Prisklass": "$$",
