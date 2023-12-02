@@ -4,14 +4,12 @@ import addressesData from "../components/rasturants/capitalized_api_data (2).jso
 import "./RM.css"; // Import the stylesheet
 import Collapsible from "../components/Collapsible";
 import Head from "../components/head";
+
 function RM() {
   const [selectedAddress, setSelectedAddress] = useState(null);
 
   useEffect(() => {
-    // Hide main scrollbar when component mounts
     document.body.style.overflow = "hidden";
-
-    // Revert scrollbar when component unmounts
     return () => {
       document.body.style.overflow = "auto";
     };
@@ -23,12 +21,11 @@ function RM() {
 
   return (
     <div className="RM_Container">
-      <Head />
       <div className="Rm">
         <div className="MegaContainer">
           <div className="buttons">
-          <button id="return"><i class="fa-solid fa-arrow-left"></i></button>
-          <button>Add</button>
+            <button id="return"><i class="fa-solid fa-arrow-left"></i></button>
+            <button>Add</button>
           </div>
           <div className="colors">
             <div className="typeName">
