@@ -7,6 +7,7 @@ import PrivateRoute from "./utils/PrivateRoute";
 import { AuthProvider } from "./utils/authContext";
 import Chapters from "./components/Quran/Chapters";
 import Res from './page/RM'
+import Profile from "./page/profile";
 function App() {
   return (
     <Router>
@@ -17,7 +18,7 @@ function App() {
           <Route path="/sign-up" element={<Sign />} />
           < Route path="/quran" element={<Chapters />}/>
           < Route path="/find" element={<Res />}/>
-
+          < Route path="/profile" element={<Profile />}/>
         </Routes>
       </AuthProvider>
     </Router>

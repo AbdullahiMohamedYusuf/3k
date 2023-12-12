@@ -1,24 +1,26 @@
 import React from 'react';
 import './dropdown.css'
 
-function Dropdown() {
-    return (
-        <div>
-            <div class="page">
-                <div class="select-dropdown">
-                    <select>
-                        <option value="Brooklyn">All</option>
+function Dropdown({ onChange }) {
+  const handleDropdownChange = (event) => {
+    onChange(event.target.value);
+  };
 
-                        <option value="Brooklyn">Moské</option>
-                        <option value="Manhattan">Resturang</option>
-                        <option value="Queens">Kafé</option>
-                        <option value="Brooklyn">Kaffebar</option>
-
-                    </select>
-                </div>
-            </div>
+  return (
+    <div className="drop">
+      <div class="page">
+        <div class="select-dropdown">
+          <select onChange={handleDropdownChange}>
+            <option value="All">All</option>
+            <option value="Moské">Moské</option>
+            <option value="Resturang">Resturang</option>
+            <option value="Kafé">Kafé</option>
+            <option value="Kaffebar">Kaffebar</option>
+          </select>
         </div>
-    )
+      </div>
+    </div>
+  );
 }
 
-export default Dropdown
+export default Dropdown;

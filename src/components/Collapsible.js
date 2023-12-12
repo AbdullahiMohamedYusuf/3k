@@ -23,7 +23,8 @@ function Collapsible(props) {
       Stjärnor: props.stjarnor,
       Typ: props.typ
     });
-  };
+  };              
+
 
   return (
     <div>

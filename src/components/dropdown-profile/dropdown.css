@@ -1,0 +1,75 @@
+.MenuList-own {
+  width: 110px;
+  height: 130px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: #7c78b8;
+  border: none;
+  outline: none;
+  margin-top: 10px;
+  outline: none;
+  align-items: center;
+}
+.Item-menu h3 {
+    border-bottom: 1px solid #d4d3e818;
+    padding-bottom: 2px;
+    background-color: transparent;
+}
+.Item-menu {
+  border: none;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  outline: none;
+  opacity: 0.7;
+  font-weight: bold;
+  cursor: pointer;
+  transition:0.5s;
+  background-color: transparent;
+}
+.SUPPAAA {
+  background-color: #000;
+}
+.Item-menu a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color:#000
+}
+
+.Item-menu li {
+    font-weight: bolder;
+
+}
+
+.Item-menu:hover {
+    opacity: 1;
+    color: #5d54a4;
+}
+
+.profile-picture {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  border-radius: 50%;
+  background-position: center;
+  cursor: pointer;
+}
+
+.profile-picture:active {
+    width: 49px;
+    height: 49px;
+}
+.MenuList-own::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  right: 3rem;
+  width: 15px;
+  height: 15px;
+  background-color: #7c78b8;
+  transform: rotate(45deg);
+}

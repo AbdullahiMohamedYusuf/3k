@@ -17,7 +17,7 @@
   background-color: transparent;
   color: #fff;
   border-radius: 10px;
-  border: 1px solid #9E97E3;
+  border: 1px solid #9e97e3;
   padding: 10px;
   min-width: 100px;
   display: flex;
@@ -29,12 +29,70 @@
 }
 
 .prayer-time:hover {
-  background-color: #9E97E3;
+  background-color: #9e97e3;
   translate: 0 -10%;
 }
-
 
 .prayer-time p {
   margin: 0;
   padding: 0;
+}
+
+
+.cities {
+  padding: 10px;
+  border-radius: 50px;
+  background-color: #9e97e3;
+  box-shadow: 6px 6px 10px -1px #7c78b8, -6px -6px 10px -1px #5d54a4;
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1%;
+}
+.cities input {
+  color: #fff;
+  outline: none;
+  text-align: center;
+  cursor:unset
+}
+.cities input:active {
+  background-color: #5d54a4;
+}
+.cities button, .cities input{
+  width: 150px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  transition: 0.5s;
+  border-radius: 30px;
+  background-size: 100% 200%;
+  background-image: linear-gradient(to bottom, #938cd4 50%, #5d54a4 50%);
+  -webkit-transition: background-position 1s;
+  -moz-transition: background-position 1s;
+  transition: background-position 0.5s;
+  color: #fff;
+
+}
+.citites input{
+  width: 150px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  transition: 0.5s;
+  border-radius: 30px;
+  background-size: 100% 200%;
+  background-image: linear-gradient(to bottom, #938cd4 50%, #5d54a4 50%);
+  -webkit-transition: background-position 1s;
+  -moz-transition: background-position 1s;
+  transition: background-position 0.5s;
+  color: #fff;
+}
+
+.cities button:hover {
+  background-color: #5d54a4;
+  background-position: 0 -100%;
+
 }

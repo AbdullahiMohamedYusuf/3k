@@ -1,0 +1,52 @@
+.company-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.company-form input[type='text'],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.company-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.company-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Styles for the read-only information */
+.company-info {
+  margin-bottom: 20px;
+}
+
+.company-info p {
+  margin-bottom: 10px;
+}
+
+.company-info input[type='text'],
+.company-info textarea {
+  display: none;
+}
+
+.company-info p:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.company-info p:last-child {
+  margin-bottom: 0;
+}

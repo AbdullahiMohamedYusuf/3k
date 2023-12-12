@@ -14,7 +14,22 @@
   text-decoration: none;
   list-style: none;
 }
+nav .logoImg {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  top: 5px;
+  background: url("./images//loga_bild.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
 
+/*Action*/
+
+
+/*everything else*/
 nav {
   color: #777;
   align-items: center;
@@ -381,7 +396,7 @@ header p {
 .Rm {
   overflow-y: hidden;
   display: flex;
-  background-color: #ffff ;
+  background-color: #ffff;
 }
 .RM_Container {
   overflow-y: hidden;
@@ -422,97 +437,33 @@ header p {
 }
 
 #return {
-  box-shadow: 0px 10px 10px -1px rgba(0, 0, 0, 0.15),
-    -6px -6px 10px -1px rgba(187, 187, 187, 0.7);
-    padding: 10px;
-    width: 40px;
-    height: 40px;
-    position: relative;
-    top: 20px;
-    left: 30px;
-    border-radius: 10px;
-    border:none;
-    cursor: pointer;
-    background-color: #e3edf7;
-    color: #000
+  box-shadow: 10px 10px 10px -1px #cfcfcf,
+    -6px -6px 10px -1px rgba(184, 183, 183, 0.7);
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  top: 20px;
+  left: 30px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #e3edf7;
+  color: #000;
 }
 #return:active {
   box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
     -6px -6px 10px -1px rgba(187, 187, 187, 0.7);
 }
 .buttons {
-  display:flex;
-  flex-direction:row;
-  justify-content:space-between;
-  align-items:center;
-  padding:5px;
-}
-
-/* Additional styles for list items */
-
-.accordion {
-  margin: 60px auto;
-  width: 600px;
-}
-.list-container {
-  width: 90%;
-  margin-left: 5%;
-}
-.accordion li {
-  list-style-type: none;
-  width: 100%;
-  margin: 0px;
-  padding: 10px;
-  border-radius: 8px;
-  background: #f0f1f3;
-  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
-    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
-}
-
-.accordion li label {
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  font-size: 18px;
-  font-weight: 500;
-  cursor: pointer;
-}
-
-label::before {
-  content: "+";
-  margin-right: 10px;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-input[type="radio"] {
-  display: none;
-}
-.accordion .accordion-content {
-  color: #555;
-  padding: 0 10px;
-  line-height: 26px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s, padding 0.5s;
-}
-
-.accordion input[type="radio"]:checked + label + .accordion-content {
-  max-height: 400px;
-  padding: 10px 10px 20px;
-}
-
-.addressLabel {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%;
   align-items: center;
+  padding: 5px;
 }
 
-.accordion input[type="radio"]:checked + label::before {
-  content: "-";
-}
+/* Additional styles for list items */
 
 .boxTypeB {
   width: 10px;
@@ -547,10 +498,16 @@ input[type="radio"] {
 
 .colors {
   display: flex;
-  gap: 1%;
+  gap: 5%;
   align-items: center;
 
   position: sticky;
+}
+.colorType {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+  width: 130px;
 }
 
 .boxTypeR:hover {
@@ -582,7 +539,6 @@ input[type="radio"] {
   /* ... */
 }
 
-
 .containCategory {
   display: flex;
   flex-direction: column;
@@ -590,16 +546,16 @@ input[type="radio"] {
   margin-top: 10%;
 }
 
-.containCategory input{
+.containCategory input {
   width: 450px;
   margin-top: 4%;
   padding: 10px;
-  border:none;
+  border: none;
   border-radius: 10px;
-  box-shadow: 0px 10px 10px -1px rgba(0, 0, 0, 0.15),
-    -6px -6px 10px -1px rgba(187, 187, 187, 0.7);
-    outline: none;
-    color: #3f3f3f;
+  box-shadow: 10px 10px 10px -1px #cac9c9,
+    -6px -6px 10px -1px rgba(141, 140, 140, 0.7);
+  outline: none;
+  color: #3f3f3f;
 }
 
 .search {
@@ -607,5 +563,6 @@ input[type="radio"] {
   align-items: center;
   width: 700px;
   gap: 2%;
-  
+  justify-content: space-evenly;
+  margin-bottom: 10px;
 }

@@ -1,6 +1,7 @@
 {
   "name": "halal_v2",
   "version": "0.1.0",
+  "proxy": "http://localhost:3000",
   "private": true,
   "compilerOptions": {
     "target": "ES6",
@@ -15,11 +16,13 @@
     "node_modules"
   ],
   "dependencies": {
+    "@headlessui/react": "^1.7.17",
+    "@material-tailwind/react": "^2.1.5",
     "@rumess/react-flip-countdown": "^1.2.6",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "axios": "^1.5.1",
+    "axios": "^1.6.2",
     "framer-motion": "^10.16.4",
     "google-map-react": "^2.2.1",
     "jquery": "^3.7.1",
@@ -28,9 +31,11 @@
     "leaflet-control-geocoder": "^2.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.17.0",
+    "react-router-dom": "^6.20.1",
     "react-scripts": "5.0.1",
+    "react-simple-widgets": "^6.7.0",
     "react-type-animation": "^3.2.0",
+    "stream-http": "^3.2.0",
     "sweden-prayer-times": "^2.0.4",
     "url": "^0.11.3",
     "web-vitals": "^2.1.4"

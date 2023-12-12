@@ -1,10 +1,4 @@
 
-* {
-  margin: 0;
-  padding: 0;
-  position: relative;
-  box-sizing: border-box;
-}
 
 html, body {
   height: 100%;
@@ -12,19 +6,20 @@ html, body {
 
 
 
-.select-dropdown {
+.drop .select-dropdown {
   position: relative;
   background: #f0f1f3;
   width: auto;
   float: left;
   max-width: 100%;
   border-radius: 2px;
-  box-shadow: 0px 10px 10px -1px rgba(0, 0, 0, 0.15),
-    -6px -6px 10px -1px rgba(187, 187, 187, 0.7);
+  box-shadow: 10px 10px 10px -1px #aaa,
+    -6px -6px 10px -1px rgba(141, 140, 140, 0.7);
     border-radius: 10px;
+    margin-top: 25px;
 }
 
-.select-dropdown select {
+.drop .select-dropdown select {
   font-family: "helvetica neue", helvetica;
   font-size: 1rem;
   font-weight: 200;
@@ -37,13 +32,13 @@ html, body {
   appearance: none;
 }
 
-.select-dropdown select:active,
-.select-dropdown select:focus {
+.drop .select-dropdown select:active,
+.drop .select-dropdown select:focus {
   outline: none;
   box-shadow: none;
 }
 
-.select-dropdown:after {
+.drop .select-dropdown:after {
   content: " ";
   position: absolute;
   top: 50%;

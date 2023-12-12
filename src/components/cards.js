@@ -1,8 +1,17 @@
 import React from "react";
+import { useNavigate } from 'react-router-dom';
+
 import "./card.css";
 function Cards(props) {
+
+  const navigate = useNavigate();
+  function handleClick(path) {
+    navigate('/' + path)
+  }
+
+
   return (
-    <div className="Card">
+    <div className="Card" onClick={() => handleClick(props.path)}>
       <a>
         <div className="icon">
           <i class={props.icon}></i>

@@ -17,11 +17,14 @@ function Header() {
       icon: "fa-solid fa-mosque fa",
       title: "Find your Local Mosques",
       p: "Immerse yourself in the beauty of Islamic architecture and find a welcoming space",
+      path: "find"
+
     },
     {
       icon: "fa-solid fa-shop fa",
       title: "Halal Resturants",
       p: "Explore the rich tapestry of halal cuisine in your city.",
+      path: "find"
     },
     {
       icon: "fa-solid fa-book-quran fa",
@@ -40,6 +43,7 @@ function Header() {
               <h1>
                 <LiveClockUpdate />{" "}
               </h1>
+              
               <UniquePrayerTimesRow />
             </div>
           </div>
@@ -95,7 +99,7 @@ function Header() {
         <h2 className="Super-title">Awesome <span>Features</span></h2>
         <div className="cards-container">
           {resturangs.map((item) => {
-            return <Cards icon={item.icon} title={item.title} p={item.p} />;
+            return <Cards icon={item.icon} title={item.title} p={item.p} path={item.path}/>;
           })}
         </div>
       </div>

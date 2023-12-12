@@ -120,8 +120,8 @@ a {
   font-size: 40px;
   position: relative;
   text-align: center;
-  top: 0%;
-  left: 25%;
+  top: -3%;
+  left:0%;
 }
 
 .Card .discription {
