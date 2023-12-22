@@ -40,14 +40,32 @@ export const AuthProvider = ({ children }) => {
       setAuthToken(data);
       setuser(jwtDecode(data.access));
       localStorage.setItem("authToken", JSON.stringify(data));
-      const profileExists = await CheckProfile(jwtDecode(data.access).user_id); // Pass the user ID
-      const CheckCompanyExist = await CheckCompany(jwtDecode(data.access).user_id); // Pass the user ID
-
-      if (profileExists || CheckCompanyExist) {
-        navigate("/");
-      } else {
-        navigate("/continue-setup");
+      
+      try {
+        const userId = jwtDecode(data.access).user_id;
+        console.log("User ID:", userId);
+      
+        const profileExists = await CheckProfile(userId);
+        console.log("Profile Exists:", profileExists);
+      
+        const CheckCompanyExist = await CheckCompany(userId);
+        console.log("Check Company Exists:", CheckCompanyExist);
+      
+        if (profileExists || CheckCompanyExist) {
+          navigate("/");
+        } else if (!CheckCompanyExist) {
+          navigate('/company-setup');
+        } else if (!profileExists) {
+          navigate('/profile-setup');
+        } else {
+          alert("Something went wrong");
+        }
+      } catch (error) {
+        console.error("Error:", error);
+        alert("Something went wrong");
       }
+      
+      
     } else {
       alert("Something went wrong");
     }
@@ -92,12 +110,11 @@ export const AuthProvider = ({ children }) => {
   
       if (response.ok) {
         const data = await response.json();
-        console.log(data)
-        if (data.user_id === userId) {
-          return true; // Company exists for the user
-        } else {
-          return false; // Company does not match logged-in user
-        }
+  
+        // Check if any company matches the user ID
+        const companyExists = data.some((company) => company.user_ID_C === userId);
+  
+        return companyExists;
       } else {
         return false; // Non-200 response
       }
@@ -106,6 +123,7 @@ export const AuthProvider = ({ children }) => {
       return false; // Error occurred during fetch
     }
   };
+  
   
 
   let logoutUser = () => {
@@ -177,33 +195,35 @@ export const AuthProvider = ({ children }) => {
     const fetchUserProfile = async () => {
       try {
         const authToken = localStorage.getItem("authToken");
-
+  
         if (!authToken) {
           console.error("No authentication token found.");
           return;
         }
-
+  
         const token = jwtDecode(authToken);
-
+  
         if (!token) {
           console.error("Invalid authentication token.");
           return;
         }
-
+  
         const response = await fetch(`http://127.0.0.1:8000/user-profile`, {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
-            Authorization: `Bearer ${authToken}`, // Using the token directly
+            Authorization: `Bearer ${authToken}`,
           },
         });
-
+  
         if (response.ok) {
           const data = await response.json();
+  
+          // Find the user profile based on the user ID
           const userProfile = data.find(
-            (companyInfo) => companyInfo.user === user.user_id
+            (profile) => profile.user_ID === token.user_id
           );
-
+  
           // Check if userProfile is found before updating state
           if (userProfile) {
             setProfileData(userProfile);
@@ -216,9 +236,10 @@ export const AuthProvider = ({ children }) => {
         console.error("Error fetching user profile:", error);
       }
     };
-
+  
     fetchUserProfile();
   }, [user]);
+  
 
   let contextData = {
     user: user,
