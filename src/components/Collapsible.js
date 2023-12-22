@@ -27,7 +27,7 @@ function Collapsible(props) {
 
 
   return (
-    <div>
+    <div className="collapsible">
       <ul className="accordion">
         <li>
           <input

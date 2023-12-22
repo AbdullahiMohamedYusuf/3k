@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import { useState, useContext } from "react";
 import "./company.css"; // Import your CSS file for styling
+import AuthContext from "../../utils/authContext";
 
 const CompanyForm = () => {
+  const { profileData } = useContext(AuthContext);
+
   const initialCompanyInfo = {
     name: "Halal Inc.",
     address: "Drottningsgatan 9",
@@ -51,7 +54,7 @@ const CompanyForm = () => {
       {displayMode ? (
         <div className="company-info">
           <h3>Company Information</h3>
-          <p>Company Name: {companyInfo.name}</p>
+          <p>Company Name: {profileData.UserCompany}</p>
           <p>Company Address: {companyInfo.address}</p>
           <p>Company Number: {companyInfo.phoneNumber}</p>
           <p>Company OpenHours: {companyInfo.openHours}</p>
@@ -73,7 +76,7 @@ const CompanyForm = () => {
             onChange={handleChange}
             placeholder="PhoneNumber"
           />
-      
+
           <input
             type="text"
             name="description"

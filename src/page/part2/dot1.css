@@ -1,0 +1,16 @@
+.one, .two {
+  width: 45px;
+  height: 45px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border: 4px solid #3586ff;
+  color: #3586ff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.two {
+    border: 4px solid #b1afaf;
+    color: #b1afaf;
+  }

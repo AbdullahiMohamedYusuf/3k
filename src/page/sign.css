@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+.form-wrapper {
+  height: 100%;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Ubuntu", sans-serif;
+  position: relative;
+  margin-top: 00px;
+}
+
+.form h1 {
+  font-size: 40px;
+  margin-bottom: 1%;
+  color: #3586ff;
+}
+.form form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 400px;
+  align-items: start;
+}
+
+.input,
+textarea {
+  padding: 0 30px 0 48px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  height: 62px;
+  border: none;
+  font-weight: bolder;
+  outline: none;
+  transition: 0.5s; /* Adding a transition effect for border-color */
+  color: #3586ff;
+  line-height: 1.2;
+  display: block;
+  width: 100%;
+  background: 0 0;
+  font-size: 17px;
+}
+.input:focus {
+  padding: 0 20px 0 38px;
+}
+.form input {
+  overflow: visible;
+}
+.form input::placeholder,
+textarea::placeholder {
+  color: #adabc2;
+}
+.form[role="button"],
+a,
+area,
+button,
+input,
+label,
+select,
+summary,
+textarea {
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+#Sign {
+  background-color: #3586ff;
+  color: #fff;
+  cursor: pointer;
+}
+#Sign:active {
+  background-color: #2b2646;
+  border: none;
+}
+.input:focus {
+  border: 3px solid #7c78b8; /* Change border on focus */
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none; /* Remove default checkbox style on Safari */
+  -moz-appearance: none; /* Remove default checkbox style on Firefox */
+  appearance: none; /* Remove default checkbox style on other browsers */
+  width: 20px; /* Adjust the size of the checkbox */
+  height: 20px; /* Adjust the size of the checkbox */
+  border-radius: 4px; /* Add some border radius for a rounded look */
+  outline: none; /* Remove the highlight when focused */
+  transition: background-color 0.3s; /* Add a smooth transition effect */
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  display: inline-block;
+  width: 20px; /* Adjust the size of the pseudo-element */
+  height: 20px; /* Adjust the size of the pseudo-element */
+  background-color: transparent; /* Set the desired checkbox color */
+  border: 2px solid #403866; /* Add a border for better visibility */
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked::before {
+  background-color: #403866; /* Set the color when the checkbox is checked */
+}
+#remember {
+  font-size: 18px;
+}
+.checkBox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form h5 {
+  color: #b1afaf;
+  margin-bottom: 10px;
+}
+
+.form-wrapper nav .Navi {
+  color: #555;
+}
+
+.num {
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+
+.stages {
+  display: flex;
+  gap: 10px;
+}
+
+
+.two {
+  border: 4px solid #b1afaf;
+  color: #b1afaf;
+}
+
+.multi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.location,
+.selector {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+}
+
+.location input {
+  width: 220px;
+}

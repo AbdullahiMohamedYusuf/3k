@@ -9,6 +9,7 @@ import AuthContext from "../utils/authContext";
 import UniquePrayerTimesRow from "../components/FetchPrayerTime";
 import Chapters from "../components/Quran/Chapters";
 import Head from "../components/head";
+import Footer from "../components/footer/footer";
 function Header() {
   let { user } = useContext(AuthContext);
 

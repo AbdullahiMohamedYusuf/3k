@@ -27,7 +27,7 @@
     cursor: pointer;
   }
   
-  label::before {
+  .collapsible label::before {
     content: "+";
     margin-right: 10px;
     font-size: 24px;

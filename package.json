@@ -31,6 +31,7 @@
     "leaflet-control-geocoder": "^2.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-multistep": "^5.5.9",
     "react-router-dom": "^6.20.1",
     "react-scripts": "5.0.1",
     "react-simple-widgets": "^6.7.0",

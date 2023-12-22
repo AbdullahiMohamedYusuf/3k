@@ -20,13 +20,13 @@ function Head() {
             <div class="menu">
               <ul>
                 <li>
-                  <a href="#">Resturant</a>
+                  <a href="#" className="Navi">Resturant</a>
                 </li>
                 <li>
-                  <a href="#">Shops</a>
+                  <a href="#" className="Navi">Shops</a>
                 </li>
                 <li>
-                  <a href="#">Moskés</a>
+                  <a href="#" className="Navi">Moskés</a>
                 </li>
               </ul>
             </div>
@@ -36,10 +36,14 @@ function Head() {
               ) : (
                 <button
                   onClick={() => {
-                    navigate("/login");
+                    navigate(
+                      window.location.pathname === "/login"
+                        ? "/sign-up"
+                        : "/login"
+                    );
                   }}
                 >
-                  Login
+                  {window.location.pathname === "/login" ? "Sign Up" : "Login"}
                 </button>
               )}
             </div>

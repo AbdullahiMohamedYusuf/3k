@@ -11,6 +11,7 @@ import AuthContext from "../../utils/authContext";
 
 function Role() {
   const { profileData } = useContext(AuthContext);
+  
 
   return (
     <div className="role">
@@ -79,7 +80,7 @@ function Role() {
           </div>
           {profileData ? (
               <h3>
-                {profileData.first_name} {profileData.last_name}
+                {profileData.UserEmail}
               </h3>
             ) : (
               <p>Loading profile data...</p>
