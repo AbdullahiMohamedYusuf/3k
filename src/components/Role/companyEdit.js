@@ -1,9 +1,92 @@
-import { useState, useContext } from "react";
-import "./company.css"; // Import your CSS file for styling
+import {
+  createContext,
+  useState,
+  useEffect,
+  Children,
+  useContext,
+} from "react";import "./company.css"; // Import your CSS file for styling
 import AuthContext from "../../utils/authContext";
+import { jwtDecode } from "jwt-decode";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const CompanyForm = () => {
-  const { profileData } = useContext(AuthContext);
+
+  let [userInformation, setinformation] = useState({});
+  const [ToggleProfile, setProfile] = useState(false);
+  const fart = false;
+  const { user, profileData, CheckProfile, CheckCompany } =
+    useContext(AuthContext);
+  const navigate = useNavigate();
+  const [usercompany, setcompany] = useState({});
+
+
+  useEffect(() => {
+    const profileGet = async () => {
+      try {
+        const response = await fetch("http://127.0.0.1:8000/user-profile", {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${localStorage.getItem("authToken")}`,
+          },
+        });
+        const data = await response.json();
+        setinformation(data.find(
+          (find_id) => find_id["user_ID"] === user.user_id
+        ))
+        if (response.ok) {
+          const foundUser = data.find(
+            (find_id) => find_id["user_ID"] === user.user_id
+          );
+          if (foundUser) {
+            console.log(foundUser); // Log the found  userInformation
+          } else {
+            console.log("User information not found");
+          }
+        } else {
+          console.log("Failed to fetch user profile");
+        }
+      } catch (error) {
+        console.error("Error checking profile:", error);
+      }
+    };
+
+    const companyGet = async () => {
+      try {
+        const response = await fetch("http://127.0.0.1:8000/company", {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${localStorage.getItem("authToken")}`,
+          },
+        });
+        const data = await response.json();
+        setcompany(data.find(
+          (find_id) => find_id["user_ID_C"] === user.user_id
+        ))
+        if (response.ok) {
+          const foundUser = data.find(
+            (find_id) => find_id["user_ID_C"] === user.user_id
+          );
+          if (foundUser) {
+            console.log(foundUser); // Log the found  userInformation
+          } else {
+            console.log("User information not found");
+          }
+        } else {
+          console.log("Failed to fetch user profile");
+        }
+      } catch (error) {
+        console.error("Error checking profile:", error);
+      }
+    };
+    profileGet();
+    companyGet();
+    console.log('User Company:', usercompany);
+
+    console.log("Look:", userInformation)
+  }, [user]);
+
 
   const initialCompanyInfo = {
     name: "Halal Inc.",
@@ -51,14 +134,14 @@ const CompanyForm = () => {
   return (
     <div className="company-form">
       <h2>Company Profile</h2>
-      {displayMode ? (
+      {usercompany ? (
         <div className="company-info">
           <h3>Company Information</h3>
-          <p>Company Name: {profileData.UserCompany}</p>
-          <p>Company Address: {companyInfo.address}</p>
-          <p>Company Number: {companyInfo.phoneNumber}</p>
-          <p>Company OpenHours: {companyInfo.openHours}</p>
-          <p>Company Description: {companyInfo.description}</p>
+          <p>Company Name: {usercompany.CompanyName}</p>
+          <p>Company Address: {usercompany.Address}</p>
+          <p>Company Number: {usercompany.CompanyNumber}</p>
+          <p>Company Type: {usercompany.Typ}</p>
+          <p>Company email: {usercompany.companyEmail}</p>
 
           {/* Add other fields similarly */}
         </div>

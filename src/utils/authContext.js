@@ -40,23 +40,23 @@ export const AuthProvider = ({ children }) => {
       setAuthToken(data);
       setuser(jwtDecode(data.access));
       localStorage.setItem("authToken", JSON.stringify(data));
-      
+
       try {
         const userId = jwtDecode(data.access).user_id;
         console.log("User ID:", userId);
-      
+
         const profileExists = await CheckProfile(userId);
         console.log("Profile Exists:", profileExists);
-      
+
         const CheckCompanyExist = await CheckCompany(userId);
         console.log("Check Company Exists:", CheckCompanyExist);
-      
-        if (profileExists || CheckCompanyExist) {
+
+        if (profileExists) {
           navigate("/");
-        } else if (!CheckCompanyExist) {
-          navigate('/company-setup');
-        } else if (!profileExists) {
-          navigate('/profile-setup');
+        } else if (!profileExists && !CheckCompanyExist) {
+          navigate("/profile-setup");
+        } else if (profileExists && !CheckCompanyExist) {
+          navigate("/company-setup");
         } else {
           alert("Something went wrong");
         }
@@ -64,8 +64,6 @@ export const AuthProvider = ({ children }) => {
         console.error("Error:", error);
         alert("Something went wrong");
       }
-      
-      
     } else {
       alert("Something went wrong");
     }
@@ -85,6 +83,7 @@ export const AuthProvider = ({ children }) => {
         const data = await response.json();
   
         if (data.user_id === userId) {
+          console.log("User Profile Data:", data); // Log fetched profile data
           return true; // User profile exists
         } else {
           return false; // User profile does not match logged-in user
@@ -97,7 +96,7 @@ export const AuthProvider = ({ children }) => {
       return false; // Error occurred during fetch
     }
   };
-  
+
   let CheckCompany = async (userId) => {
     try {
       const response = await fetch("http://127.0.0.1:8000/company", {
@@ -107,13 +106,15 @@ export const AuthProvider = ({ children }) => {
           Authorization: `Bearer ${localStorage.getItem("authToken")}`,
         },
       });
-  
+
       if (response.ok) {
         const data = await response.json();
-  
+
         // Check if any company matches the user ID
-        const companyExists = data.some((company) => company.user_ID_C === userId);
-  
+        const companyExists = data.some(
+          (company) => company.user_ID_C === userId
+        );
+
         return companyExists;
       } else {
         return false; // Non-200 response
@@ -123,8 +124,6 @@ export const AuthProvider = ({ children }) => {
       return false; // Error occurred during fetch
     }
   };
-  
-  
 
   let logoutUser = () => {
     setAuthToken(null);
@@ -177,7 +176,7 @@ export const AuthProvider = ({ children }) => {
           PhoneNumber: e.target.number.value,
         }),
       });
-  
+
       if (response.status === 201) {
         return true;
       } else {
@@ -195,19 +194,19 @@ export const AuthProvider = ({ children }) => {
     const fetchUserProfile = async () => {
       try {
         const authToken = localStorage.getItem("authToken");
-  
+
         if (!authToken) {
           console.error("No authentication token found.");
           return;
         }
-  
+
         const token = jwtDecode(authToken);
-  
+
         if (!token) {
           console.error("Invalid authentication token.");
           return;
         }
-  
+
         const response = await fetch(`http://127.0.0.1:8000/user-profile`, {
           method: "GET",
           headers: {
@@ -215,19 +214,19 @@ export const AuthProvider = ({ children }) => {
             Authorization: `Bearer ${authToken}`,
           },
         });
-  
+
         if (response.ok) {
           const data = await response.json();
-  
+
           // Find the user profile based on the user ID
           const userProfile = data.find(
             (profile) => profile.user_ID === token.user_id
           );
-  
+          setProfileData(userProfile);
+
           // Check if userProfile is found before updating state
           if (userProfile) {
             setProfileData(userProfile);
-            console.log(userProfile);
           }
         } else {
           console.error("Failed to fetch user profile");
@@ -236,18 +235,19 @@ export const AuthProvider = ({ children }) => {
         console.error("Error fetching user profile:", error);
       }
     };
-  
+
     fetchUserProfile();
   }, [user]);
-  
 
   let contextData = {
     user: user,
     logoutUser: logoutUser,
     loginUser: loginUser,
-    profileData: profileData,
+    CheckProfile: CheckProfile,
     SignUser: SignUser,
     UserProfileCreation: UserProfileCreation,
+    CheckCompany: CheckCompany,
+    profileData:profileData
   };
 
   return (

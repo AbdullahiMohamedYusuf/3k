@@ -9,7 +9,6 @@ import AuthContext from "../utils/authContext";
 import UniquePrayerTimesRow from "../components/FetchPrayerTime";
 import Chapters from "../components/Quran/Chapters";
 import Head from "../components/head";
-import Footer from "../components/footer/footer";
 function Header() {
   let { user } = useContext(AuthContext);
 
@@ -27,11 +26,7 @@ function Header() {
       p: "Explore the rich tapestry of halal cuisine in your city.",
       path: "find"
     },
-    {
-      icon: "fa-solid fa-book-quran fa",
-      title: "Duas",
-      p: "Experience the profound essence of spiritual connection through duas",
-    },
+   
   ];
 
   return (
@@ -156,15 +151,9 @@ function Header() {
       
       <div className="famous">
         <div className="title">
-          <h1>Hello</h1>
           <div className="line"></div>
         </div>
       </div>
-      {user ? (
-        <p>Welcome, {user.username}!</p>
-      ) : (
-        <p>Please log in to see user data</p>
-      )}
     </div>
   );
 }

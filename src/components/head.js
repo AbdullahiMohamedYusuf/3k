@@ -17,19 +17,7 @@ function Head() {
             <div className="logoImg"></div>
           </a>
           <div class="buttons">
-            <div class="menu">
-              <ul>
-                <li>
-                  <a href="#" className="Navi">Resturant</a>
-                </li>
-                <li>
-                  <a href="#" className="Navi">Shops</a>
-                </li>
-                <li>
-                  <a href="#" className="Navi">Moskés</a>
-                </li>
-              </ul>
-            </div>
+          
             <div className="landing-profile">
               {user ? (
                 <DropdownP />

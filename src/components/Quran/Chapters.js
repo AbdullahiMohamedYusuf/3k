@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./quran.css";
-
+import Verses from "./verses";
 function Chapters() {
   const [chapters, setChapters] = useState(null);
 
@@ -51,7 +51,7 @@ function Chapters() {
         </div>
       </div>
       <div className="displayQ">
-      asdas
+      <Verses />
       </div>
     </div>
   );

@@ -1,12 +1,51 @@
-import React, { useContext } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import Head from "../../components/head";
 import "../sign.css";
 import axios from "axios";
 import AuthContext from "../../utils/authContext";
 import "./dot2.css";
+import { useNavigate } from "react-router-dom";
 
 function CompanyProfile() {
-  const { user } = useContext(AuthContext);
+  const navigate = useNavigate();
+  const { user, profileData, CheckProfile } = useContext(AuthContext);
+
+  const [userInformation, setinformation] = useState();
+  useEffect(() => {
+    if (!user) {
+      navigate("/login");
+    }
+
+    const profileGet = async () => {
+      try {
+        const response = await fetch("http://127.0.0.1:8000/user-profile", {
+          method: "GET",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${localStorage.getItem("authToken")}`,
+          },
+        });
+        const data = await response.json();
+  
+        if (response.ok) {
+          const foundUser = data.find(find_id => find_id['user_ID'] === user.user_id);
+          if (foundUser) {
+            setinformation(foundUser);
+            console.log(foundUser); // Log the found  userInformation
+          } else {
+            console.log("User information not found");
+          }
+        } else {
+          console.log("Failed to fetch user profile");
+        }
+      } catch (error) {
+        console.error("Error checking profile:", error);
+      }
+    };
+  
+    profileGet();
+  }, [user, navigate]);
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -20,7 +59,7 @@ function CompanyProfile() {
         postnummer: e.target.postnummer.value, // Renaming postnummer to match the expected key
         type: e.target.type.value, // Renaming type to match the expected key
       });
-      console.log("sent");
+      return navigate("/");
     } catch (err) {
       console.log(`Something went wrong ${err}`);
     }
@@ -33,7 +72,7 @@ function CompanyProfile() {
   ];
   return (
     <div className="form-wraper">
-      <div className="form">
+      {(userInformation != null) ? <div className="form">
         <h1>Company Setup</h1>
         <div className="stages2">
           <div className="one" id="stage">
@@ -103,14 +142,13 @@ function CompanyProfile() {
               </option>
             ))}
           </select>
-          <input
-            type="submit"
-            value="FINISH"
-            id="Sign"
-            className="input"
-          />
+          <input type="submit" value="FINISH" id="Sign" className="input" />
         </form>
       </div>
+      : (
+        navigate('/profile-setup')
+      )
+    }
     </div>
   );
 }
