@@ -16,7 +16,7 @@ const UniquePrayerTimesRow = () => {
       const country = "Sweden"; // Replace with your desired country
 
       const response = await axios.get(
-        `http://api.aladhan.com/v1/calendarByCity/${year}/${month}?city=${selectedCity}&country=${country}`
+        `https://api.aladhan.com/v1/calendarByCity/${year}/${month}?city=${selectedCity}&country=${country}`
       );
 
       const todayPrayerTimes = response.data.data[day - 1].timings;
@@ -46,7 +46,11 @@ const UniquePrayerTimesRow = () => {
         <button onClick={() => setCity("Malmö")}>MALMÖ</button>
         <button onClick={() => setCity("Göteborg")}>GÖTEBORG</button>
         <button onClick={() => setCity("Uppsala")}>UPPSALA</button>
-        <input type="text" placeholder="Sök efter stad här" onKeyDown={(e) => e.key == 'Enter' && setCity(e.target.value)} />
+        <input
+          type="text"
+          placeholder="Sök efter stad här"
+          onKeyDown={(e) => e.key == "Enter" && setCity(e.target.value)}
+        />
       </div>
       <div className="unique-prayer-times-row">
         {loading ? (
