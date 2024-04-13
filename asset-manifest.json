@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/3k/static/css/main.f79f9e51.css",
+    "main.js": "/3k/static/js/main.26d12ca0.js",
+    "static/media/pexels-photo-7129737.webp": "/3k/static/media/pexels-photo-7129737.3bb172590a97b42b748a.webp",
+    "static/media/pinRed.png": "/3k/static/media/pinRed.906f9a08307510dfaa22.png",
+    "static/media/loga_bild.jpg": "/3k/static/media/loga_bild.61e8bf51cf6530f53296.jpg",
+    "index.html": "/3k/index.html",
+    "main.f79f9e51.css.map": "/3k/static/css/main.f79f9e51.css.map",
+    "main.26d12ca0.js.map": "/3k/static/js/main.26d12ca0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f79f9e51.css",
+    "static/js/main.26d12ca0.js"
+  ]
+}
