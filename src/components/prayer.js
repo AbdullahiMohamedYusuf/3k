@@ -25,7 +25,6 @@ const PrayerTimes = () => {
         console.error("Error fetching data:", error);
       }
     };
-    };
 
     fetchPrayerTimes();
   }, [year, month]);
