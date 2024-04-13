@@ -9,24 +9,25 @@ import AuthContext from "../utils/authContext";
 import UniquePrayerTimesRow from "../components/FetchPrayerTime";
 import Chapters from "../components/Quran/Chapters";
 import Head from "../components/head";
+import { useNavigate } from "react-router-dom";
+
 function Header() {
   let { user } = useContext(AuthContext);
+  const navigate = useNavigate();
 
   const resturangs = [
     {
       icon: "fa-solid fa-mosque fa",
       title: "Find your Local Mosques",
       p: "Immerse yourself in the beauty of Islamic architecture and find a welcoming space",
-      path: "find"
-
+      path: "find",
     },
     {
       icon: "fa-solid fa-shop fa",
       title: "Halal Resturants",
       p: "Explore the rich tapestry of halal cuisine in your city.",
-      path: "find"
+      path: "find",
     },
-   
   ];
 
   return (
@@ -39,7 +40,7 @@ function Header() {
               <h1>
                 <LiveClockUpdate />{" "}
               </h1>
-              
+
               <UniquePrayerTimesRow />
             </div>
           </div>
@@ -92,10 +93,19 @@ function Header() {
         </div>
       </div>
       <div className="content_card">
-        <h2 className="Super-title">Awesome <span>Features</span></h2>
+        <h2 className="Super-title">
+          Awesome <span>Features</span>
+        </h2>
         <div className="cards-container">
           {resturangs.map((item) => {
-            return <Cards icon={item.icon} title={item.title} p={item.p} path={item.path}/>;
+            return (
+              <Cards
+                icon={item.icon}
+                title={item.title}
+                p={item.p}
+                path={item.path}
+              />
+            );
           })}
         </div>
       </div>
@@ -142,17 +152,19 @@ function Header() {
               dining to fine cuisine, discover the diverse flavors of halal
               gastronomy.
             </p>
-            <button>
+            <button
+              onClick={() => {
+                navigate("/om-islam");
+              }}
+            >
               Continue <i class="fa-solid fa-chevron-right"></i>
             </button>
           </div>
         </div>
       </div>
-      
+
       <div className="famous">
-        <div className="title">
-          <div className="line"></div>
-        </div>
+        <div className="title"></div>
       </div>
     </div>
   );

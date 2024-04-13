@@ -28,7 +28,6 @@ nav .logoImg {
 
 /*Action*/
 
-
 /*everything else*/
 nav {
   color: #777;
@@ -565,4 +564,59 @@ header p {
   gap: 2%;
   justify-content: space-evenly;
   margin-bottom: 10px;
+}
+.leactures {
+  display: flex;
+  max-width: 1600px;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.leactures img {
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid#333;
+}
+.speakers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px
+}
+
+.tops {
+  max-width: 1900px;
+  margin: auto;
+  display: flex;
+  gap: 20px
+}
+.button-pillars {
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+  gap:5%
+}
+.button-pillars button {
+  width: 220px;
+  height: 40px;
+  background: #5d54a4;
+  padding: 10px;
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.pillar-info h1 {
+  font-size: 30px;
+  font-weight: bolder;
+}
+.pillar-info p{
+  font-size:20px;
+  font-weight: lighter;
+}
+.tops img {
+  border-radius: 5%;
 }

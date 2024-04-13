@@ -5,6 +5,7 @@
   box-shadow: -10px 20px 30px #111;
   margin: 20px;
   padding: 20px;
+  margin-right: 3%;
   justify-content: space-between;
   gap: 20px;
 }
@@ -38,7 +39,10 @@
   padding: 0;
 }
 
-
+.column-time {
+  align-items: center;
+  margin-left: 5%;
+}
 .cities {
   padding: 10px;
   border-radius: 50px;

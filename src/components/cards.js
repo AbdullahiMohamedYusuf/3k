@@ -5,8 +5,8 @@ import "./card.css";
 function Cards(props) {
 
   const navigate = useNavigate();
-  function handleClick(path) {
-    navigate('/' + path)
+  function handleClick() {
+    navigate('/' + props.path)
   }
 
 

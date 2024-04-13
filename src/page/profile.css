@@ -18,7 +18,9 @@
   position: absolute;
   top: 20%;
 }
-
+.iso {
+  align-items: center;
+}
 .banner {
   background-color: #999;
   background-position: center;

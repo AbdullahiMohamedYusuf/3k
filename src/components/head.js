@@ -18,23 +18,7 @@ function Head() {
           </a>
           <div class="buttons">
           
-            <div className="landing-profile">
-              {user ? (
-                <DropdownP />
-              ) : (
-                <button
-                  onClick={() => {
-                    navigate(
-                      window.location.pathname === "/login"
-                        ? "/sign-up"
-                        : "/login"
-                    );
-                  }}
-                >
-                  {window.location.pathname === "/login" ? "Sign Up" : "Login"}
-                </button>
-              )}
-            </div>
+    
           </div>
         </div>
       </nav>
