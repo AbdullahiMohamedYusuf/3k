@@ -17,13 +17,14 @@ const PrayerTimes = () => {
     const fetchPrayerTimes = async () => {
       try {
         const response = await axios.get(
-          `http://api.aladhan.com/v1/calendar/${year}/${month}?latitude=59.325&longitude=18.05`
+          `https://api.aladhan.com/v1/calendar/${year}/${month}?latitude=59.325&longitude=18.05`
         );
         setPrayerTimes(response.data.data);
         setLoading(false);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
+    };
     };
 
     fetchPrayerTimes();
